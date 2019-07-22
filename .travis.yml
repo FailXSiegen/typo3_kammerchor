@@ -12,7 +12,7 @@ notifications:
     on_success: change
     on_failure: change
 before_script:
-- composer global require -q --dev deployer/deployer:~6.4 deployphp/recipes:~6.2
+- composer require -q --dev deployer/deployer:~6.4 deployphp/recipes:~6.2
 script:
 - "vendor/bin/dep -f./.deployer/config.php deploy prod"
 #before_install:
