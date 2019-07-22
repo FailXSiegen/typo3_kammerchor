@@ -72,19 +72,6 @@ renderables:
             validators:
               -
                 identifier: NotEmpty
-  -
-    renderingOptions:
-      previousButtonLabel: 'Zurück'
-      nextButtonLabel: 'Weiter'
-    type: Page
-    identifier: page-2
-    label: ''
-    renderables:
-      -
-        type: Fieldset
-        identifier: fieldset-2
-        label: ''
-        renderables:
           -
             defaultValue: ''
             type: Text
@@ -97,11 +84,6 @@ renderables:
             validators:
               -
                 identifier: NotEmpty
-            variants:
-              - identifier: variant-1
-                condition: 'formValues["firstName"] == "Felix"'
-                renderingOptions:
-                  enabled: false
           -
             defaultValue: ''
             type: Text
@@ -132,6 +114,7 @@ renderables:
             properties:
               fluidAdditionalAttributes:
                 required: required
+                placeholder: 'Ihre Nachricht'
             validators:
               -
                 identifier: NotEmpty

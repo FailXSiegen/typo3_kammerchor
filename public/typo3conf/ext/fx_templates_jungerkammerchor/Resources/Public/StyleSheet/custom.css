@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v17/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7CA.ttf) format('truetype');
+}
 .clfo-black {
   color: #000;
 }
@@ -25,6 +32,19 @@
 .navbar-nav {
   border: 0;
 }
+.navbar-nav li:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #a31521;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navbar-nav li.current:after,
+.navbar-nav li:focus:after,
+.navbar-nav li:active:after,
+.navbar-nav li:hover:after {
+  transform: scaleX(1);
+}
 a {
   color: #4e8097;
 }
@@ -35,6 +55,14 @@ a:active {
 a:hover {
   text-decoration: none;
   color: #4e8097;
+}
+a.btn-primary {
+  color: #fcf8f9;
+}
+a.btn-primary:visited,
+a.btn-primary:hover,
+a.btn-primary:active {
+  color: #fcf8f9;
 }
 #head .owl-carousel .item {
   position: relative;
@@ -47,7 +75,13 @@ a:hover {
   z-index: 100;
 }
 #head .owl-carousel .item .header-overlay .headertitle {
-  font-size: 32px;
+  font-size: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+@media (min-width: 992px) {
+  #head .owl-carousel .item .header-overlay .headertitle {
+    font-size: 32px;
+  }
 }
 #head .owl-carousel .item .overlay {
   position: absolute;
@@ -77,9 +111,32 @@ footer .nav-tabs .nav-item {
 .h1,
 h1 {
   margin-bottom: 35px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.h1.bigtext,
+h1.bigtext {
+  font-size: 36px;
+}
+@media (min-width: 992px) {
+  .h1.bigtext,
+  h1.bigtext {
+    font-size: 136px;
+  }
 }
 .h2,
 h2 {
   margin-bottom: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.h3,
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.h4,
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.clbg-red {
+  color: #fcf8f9;
 }
 /*# sourceMappingURL=custom.css.map */

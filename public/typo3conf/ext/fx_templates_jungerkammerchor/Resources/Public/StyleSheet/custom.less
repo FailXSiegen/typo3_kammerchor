@@ -1,5 +1,6 @@
 @import "_variables";
 @import "_functions";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 
 .cl {
   &fo- {
@@ -23,10 +24,28 @@
     }
   }
 }
-
 .navbar-nav {
   border: 0;
+  li {
+    &:after {
+      display:block;
+      content: '';
+      border-bottom: solid 3px @red;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+    &.current,
+    &:focus,
+    &:active,
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
 }
+
+
 
 a {
   color: @blue;
@@ -39,6 +58,15 @@ a {
   &:hover {
     text-decoration: none;
     color: @blue;
+  }
+
+  &.btn-primary {
+    color: @white;
+    &:visited,
+    &:hover,
+    &:active {
+      color: @white;
+    }
   }
 }
 
@@ -55,7 +83,11 @@ a {
         z-index: 100;
 
         .headertitle {
-          font-size: 32px;
+          font-size: 20px;
+          font-family: 'Roboto Condensed', sans-serif;
+          @media(min-width:992px) {
+            font-size: 32px;
+          }
         }
       }
 
@@ -93,8 +125,28 @@ footer {
 
 .h1, h1 {
   margin-bottom: 35px;
+  font-family: 'Roboto Condensed', sans-serif;
+  &.bigtext {
+    font-size: 36px;
+    @media(min-width:992px) {
+      font-size: 136px;
+    }
+  }
 }
 
 .h2, h2 {
   margin-bottom: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.h3, h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.h4, h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.clbg- {
+  &red {
+    color:@white;
+  }
 }

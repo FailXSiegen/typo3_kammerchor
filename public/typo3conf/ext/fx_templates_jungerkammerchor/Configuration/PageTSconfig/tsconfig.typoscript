@@ -217,10 +217,10 @@ TCEFORM {
 		frame_class {
 		    removeItems = ruler-before,ruler-after,indent,indent-left,indent-right
             addItems {
-                blue = Blau
-                red = Rot
-                white = Weiß
-                black = Schwarz
+                clbg-blue = Blau
+                clbg-red = Rot
+                clbg-white = Weiß
+                clbg-black = Schwarz
             }
 		}
 		space_before_class {

@@ -10,6 +10,22 @@
     },
     "tt_content": {
         "elements": {
+            "counter": {
+                "color": "#000000",
+                "columns": [
+                    "header",
+                    "tx_mask_countto"
+                ],
+                "description": "",
+                "icon": "",
+                "key": "counter",
+                "label": "Counter",
+                "labels": [
+                    "\u00dcberschrift",
+                    "Z\u00e4hler"
+                ],
+                "shortLabel": ""
+            },
             "headerslider": {
                 "color": "#000000",
                 "columns": [
@@ -28,6 +44,11 @@
             }
         },
         "sql": {
+            "tx_mask_countto": {
+                "tt_content": {
+                    "tx_mask_countto": "tinytext"
+                }
+            },
             "tx_mask_headerslider": {
                 "tt_content": {
                     "tx_mask_headerslider": "int(11) unsigned DEFAULT '0' NOT NULL"
@@ -35,6 +56,20 @@
             }
         },
         "tca": {
+            "tx_mask_countto": {
+                "config": {
+                    "default": "",
+                    "eval": "required",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "countto",
+                "l10n_mode": ""
+            },
             "tx_mask_headerslider": {
                 "config": {
                     "appearance": {

@@ -112,7 +112,7 @@ return [
             'unifiedPageTranslationHandling' => true,
         ],
         'sitename' => 'Junger Kammerchor Siegen-Süd',
-        'systemLogLevel' => 0,
+        'systemLogLevel' => 3,
         'systemMaintainers' => [
             2,
         ],

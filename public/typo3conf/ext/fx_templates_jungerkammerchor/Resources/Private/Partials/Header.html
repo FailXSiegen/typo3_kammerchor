@@ -27,7 +27,7 @@
                         <div class="collapse navbar-collapse justify-content-end" id="navwrap">
                             <ul class="nav navbar-nav nav-tabs">
                                 <f:for each="{mainNavigation}" as="menu">
-                                    <li class="nav-item dropdown l1 col" itemprop="name">
+                                    <li class="nav-item dropdown l1 col {f:if(condition: menu.current,then:'current')}" itemprop="name">
                                         <a href="{menu.link}"
                                            {f:if(condition:menu.target,then: 'target="{menu.target}"')}
                                         itemprop="url"
