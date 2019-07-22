@@ -12,3 +12,4 @@ vendor/
 /var/
 !/var/tests/.gitkeep
 /tests/Acceptance/Support/_generated
+deploy_rsa
