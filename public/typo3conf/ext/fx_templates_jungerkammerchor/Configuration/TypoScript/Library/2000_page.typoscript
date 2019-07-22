@@ -1,0 +1,100 @@
+page = PAGE
+page {
+    typeNum = 0
+    10 = FLUIDTEMPLATE
+    10 {
+        variables {
+            rootPageUid = TEXT
+            rootPageUid.value = {$plugin.tx_fxtemplatesjungerkammerchor.settings.rootPageUid}
+            logoPath = TEXT
+            logoPath.value = {$plugin.tx_fxtemplatesjungerkammerchor.settings.logoPath}
+        }
+        templateName = TEXT
+        templateName.stdWrap {
+            cObject = TEXT
+            cObject {
+                data = levelfield:-2,backend_layout_next_level,slide
+                override.field = backend_layout
+                split {
+                    token = pagets__
+                    1.current = 1
+                    1.wrap = |
+                }
+            }
+            ifEmpty = Default
+        }
+
+        templateRootPaths {
+            0 = EXT:fx_templates_jungerkammerchor/Resources/Private/Templates/
+        }
+        partialRootPaths {
+            0 = EXT:fx_templates_jungerkammerchor/Resources/Private/Partials/
+        }
+        layoutRootPaths {
+            0 = EXT:fx_templates_jungerkammerchor/Resources/Private/Layouts/
+        }
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            10 {
+                special = directory
+                special.value = {$plugin.tx_fxtemplatesjungerkammerchor.settings.headerNavPageUid}
+                levels = 1
+                includeSpacer = 1
+                as = topNavigation
+            }
+            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            20 {
+                special = directory
+                special.value = {$plugin.tx_fxtemplatesjungerkammerchor.settings.mainNavPageUid}
+                levels = 3
+                includeSpacer = 1
+                as = mainNavigation
+                expandAll = 1
+            }
+            30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            30 {
+                special = directory
+                special.value = {$plugin.tx_fxtemplatesjungerkammerchor.settings.footerNavPageUid}
+                levels = 1
+                includeSpacer = 1
+                as = footerNavigation
+            }
+            40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            40 {
+                special = directory
+                special.value = {$plugin.tx_fxtemplatesjungerkammerchor.settings.ctaNavPageUid}
+                levels = 1
+                as = ctaNavigation
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = media
+                    }
+                }
+            }
+            50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+            50 {
+                special = rootline
+                special.range = 0|-1
+                titleField = nav_title // title
+                as = breadcrumbNavigation
+            }
+        }
+    }
+    includeCSS {
+        bootstrap = EXT:fx_templates_jungerkammerchor/Resources/Public/Vendor/bootstrap/dist/css/bootstrap.min.css
+        fontawesome = EXT:fx_templates_jungerkammerchor/Resources/Public/Vendor/font-awesome/css/font-awesome.min.css
+        owlcarousel = EXT:fx_templates_jungerkammerchor/Resources/Public/Vendor/owl.carousel/dist/assets/owl.carousel.min.css
+        fancybox = EXT:fx_templates_jungerkammerchor/Resources/Public/Vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css
+        custom = EXT:fx_templates_jungerkammerchor/Resources/Public/StyleSheet/custom.css
+    }
+    includeJSFooterlibs {
+        jquery = EXT:fx_templates_jungerkammerchor/Resources/Public/Vendor/jquery/dist/jquery.min.js
+        bootstrapJS = EXT:fx_templates_jungerkammerchor/Resources/Public/Vendor/bootstrap/dist/js/bootstrap.min.js
+        owlcarousel = EXT:fx_templates_jungerkammerchor/Resources/Public/Vendor/owl.carousel/dist/owl.carousel.min.js
+        fancybox = EXT:fx_templates_jungerkammerchor/Resources/Public/Vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.js
+    }
+    includeJSFooter {
+        custom = EXT:fx_templates_jungerkammerchor/Resources/Public/JavaScript/javascript.js
+    }
+}

@@ -1,0 +1,148 @@
+
+renderingOptions:
+  submitButtonLabel: 'Anfrage absenden'
+type: Form
+identifier: kontakt
+label: Kontakt
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: Kontaktformular
+      recipientAddress:
+      recipientName: ''
+      senderAddress: '{email}'
+      senderName: '{lastName}'
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: true
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      table: tx_form_generic_record
+      mode: insert
+      databaseColumnMappings:
+        indentifier:
+          value: kontakt
+        pid:
+          value: '1'
+        tstamp:
+          value: '{__currentTimestamp}'
+        crdate:
+          value: '{__currentTimestamp}'
+      elements:
+        firstName:
+          mapOnDatabaseColumn: text_field_1
+        lastName:
+          mapOnDatabaseColumn: text_field_2
+        email:
+          mapOnDatabaseColumn: text_field_3
+        phone:
+          mapOnDatabaseColumn: text_field_4
+        note:
+          mapOnDatabaseColumn: text_area_1
+    identifier: SaveToDatabase
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Zurück'
+      nextButtonLabel: 'Weiter'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-1
+        label: ''
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: firstName
+            label: Vorname
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'Vorname'
+            validators:
+              -
+                identifier: NotEmpty
+  -
+    renderingOptions:
+      previousButtonLabel: 'Zurück'
+      nextButtonLabel: 'Weiter'
+    type: Page
+    identifier: page-2
+    label: ''
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-2
+        label: ''
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: lastName
+            label: Nachname
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'Nachname'
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+            variants:
+              - identifier: variant-1
+                condition: 'formValues["firstName"] == "Felix"'
+                renderingOptions:
+                  enabled: false
+          -
+            defaultValue: ''
+            type: Text
+            identifier: email
+            label: 'E-Mail Adresse'
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'E-Mail Adresse'
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+              -
+                identifier: EmailAddress
+          -
+            defaultValue: ''
+            type: Text
+            identifier: phone
+            label: Telefon
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: 'Telefonnummer'
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: note
+            label: 'Ihre Nachricht'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        type: Checkbox
+        identifier: checkbox-1
+        label: ''
+        properties:
+          elementDescription: 'Ja, ich habe die <a href="/datenschutz" target="_blank">Datenschutzhinweise</a> gelesen. Mit * gekennzeichnete Felder sind Pflichtfelder'
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty

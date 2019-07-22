@@ -1,0 +1,20 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        allowedExtensionPaths:
+          20: EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/form/Yaml/
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                templateRootPaths:
+                  100: 'EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Form/Frontend/Templates/'
+                partialRootPaths:
+                  100: 'EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Form/Frontend/Partials/'
+                layoutRootPaths:
+                  100: 'EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Form/Frontend/Layouts/'

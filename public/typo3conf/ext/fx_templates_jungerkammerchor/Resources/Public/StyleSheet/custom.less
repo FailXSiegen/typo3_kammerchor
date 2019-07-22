@@ -1,0 +1,100 @@
+@import "_variables";
+@import "_functions";
+
+.cl {
+  &fo- {
+    .for(@colors);
+    .-each(@value) {
+      @name: extract(@value, 1);
+      &@{name} {
+        color: extract(@value, 2);
+
+      }
+    }
+  }
+
+  &bg- {
+    .for(@colors);
+    .-each(@value) {
+      @name: extract(@value, 1);
+      &@{name} {
+        background-color: extract(@value, 2);
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  border: 0;
+}
+
+a {
+  color: @blue;
+
+  &:visited,
+  &:active {
+    color: @blue;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: @blue;
+  }
+}
+
+#head {
+  .owl-carousel {
+    .item {
+      position: relative;
+
+      .header-overlay {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+
+        .headertitle {
+          font-size: 32px;
+        }
+      }
+
+      .overlay {
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        bottom: 0;
+        left: -100px;
+        width: 60%;
+        .skew(-12deg, 0);
+        opacity: .7;
+      }
+    }
+
+  }
+}
+footer {
+  .nav-tabs .nav-item {
+    white-space: nowrap;
+  }
+}
+
+.btn {
+  &.btn-primary {
+    background-color: @red;
+    border-color: @red;
+
+    &:hover,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
+
+.h1, h1 {
+  margin-bottom: 35px;
+}
+
+.h2, h2 {
+  margin-bottom: 25px;
+}

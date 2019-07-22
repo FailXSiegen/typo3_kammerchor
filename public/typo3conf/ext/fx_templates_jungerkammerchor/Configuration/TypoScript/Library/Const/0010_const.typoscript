@@ -1,0 +1,28 @@
+plugin {
+    tx_fxtemplatesjungerkammerchor {
+        settings {
+            # cat=plugin.tx_fxtemplatesjungerkammerchor/basic/2; type=string; label=Root page id
+            rootPageUid = 1
+            # cat=plugin.tx_fxtemplatesjungerkammerchor/basic/3; type=string; label=Main Navigation Path
+            mainNavPageUid = 4
+            # cat=plugin.tx_fxtemplatesjungerkammerchor/basic/4; type=string; label=Top Navigation Path
+            headerNavPageUid =
+            # cat=plugin.tx_fxtemplatesjungerkammerchor/basic/5; type=string; label=Footer Navigation Path
+            footerNavPageUid = 6
+            # cat=plugin.tx_fxtemplatesjungerkammerchor/basic/11; type=string; label=CTA Navigation path id
+            ctaNavPageUid =
+            # cat=plugin.tx_fxtemplatesjungerkammerchor/basic/12; type=string; label=Logo path
+            logoPath = EXT:fx_templates_jungerkammerchor/Resources/Public/Images/logo.png
+        }
+    }
+}
+
+
+
+page {
+    fluidtemplate {
+        layoutRootPath = EXT:fx_templates_jungerkammerchor/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:fx_templates_jungerkammerchor/Resources/Private/Partials/Page/
+        templateRootPath = EXT:fx_templates_jungerkammerchor/Resources/Private/Templates/Page/
+    }
+}

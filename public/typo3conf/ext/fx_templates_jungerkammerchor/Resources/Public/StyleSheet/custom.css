@@ -1,0 +1,85 @@
+.clfo-black {
+  color: #000;
+}
+.clfo-red {
+  color: #a31521;
+}
+.clfo-white {
+  color: #fcf8f9;
+}
+.clfo-blue {
+  color: #4e8097;
+}
+.clbg-black {
+  background-color: #000;
+}
+.clbg-red {
+  background-color: #a31521;
+}
+.clbg-white {
+  background-color: #fcf8f9;
+}
+.clbg-blue {
+  background-color: #4e8097;
+}
+.navbar-nav {
+  border: 0;
+}
+a {
+  color: #4e8097;
+}
+a:visited,
+a:active {
+  color: #4e8097;
+}
+a:hover {
+  text-decoration: none;
+  color: #4e8097;
+}
+#head .owl-carousel .item {
+  position: relative;
+}
+#head .owl-carousel .item .header-overlay {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+#head .owl-carousel .item .header-overlay .headertitle {
+  font-size: 32px;
+}
+#head .owl-carousel .item .overlay {
+  position: absolute;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  left: -100px;
+  width: 60%;
+  -webkit-transform: skew(-12deg, 0);
+  -moz-transform: skew(-12deg, 0);
+  -ms-transform: skew(-12deg, 0);
+  -o-transform: skew(-12deg, 0);
+  transform: skew(-12deg, 0);
+  opacity: 0.7;
+}
+footer .nav-tabs .nav-item {
+  white-space: nowrap;
+}
+.btn.btn-primary {
+  background-color: #a31521;
+  border-color: #a31521;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:active {
+  opacity: 0.7;
+}
+.h1,
+h1 {
+  margin-bottom: 35px;
+}
+.h2,
+h2 {
+  margin-bottom: 25px;
+}
+/*# sourceMappingURL=custom.css.map */
