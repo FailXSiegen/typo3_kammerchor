@@ -14,7 +14,7 @@ notifications:
 before_script:
 - composer global require -q --dev deployer/deployer:~6.4 deployphp/recipes:~6.2
 script:
-- "$HOME/vendor/bin/dep -f./.deployer/config.php deploy prod"
+- "$TRAVIS_BUILD_DIR/vendor/bin/dep -f./.deployer/config.php deploy prod"
 #before_install:
 #- openssl aes-256-cbc -K $encrypted_65531ac48767_key -iv $encrypted_65531ac48767_iv
   #-in deploy_rsa.enc -out deploy_rsa -d
