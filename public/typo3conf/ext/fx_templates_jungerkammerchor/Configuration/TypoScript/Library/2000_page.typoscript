@@ -97,4 +97,9 @@ page {
     includeJSFooter {
         custom = EXT:fx_templates_jungerkammerchor/Resources/Public/JavaScript/javascript.js
     }
+
+    headerData {
+        1 = TEXT
+        1.value = <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    }
 }

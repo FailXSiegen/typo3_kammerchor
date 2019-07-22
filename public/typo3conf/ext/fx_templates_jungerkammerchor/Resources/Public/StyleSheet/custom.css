@@ -29,6 +29,9 @@
 .clbg-blue {
   background-color: #4e8097;
 }
+.navbar {
+  padding: 0;
+}
 .navbar-nav {
   border: 0;
 }
@@ -44,6 +47,31 @@
 .navbar-nav li:active:after,
 .navbar-nav li:hover:after {
   transform: scaleX(1);
+}
+.navbar-nav li a {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+}
+@media (min-width: 992px) {
+  .navbar-nav li a {
+    padding: 0;
+  }
+}
+#head .navbar-nav li.current a {
+  border-bottom: 0;
+}
+#head .navbar-nav li a {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: solid 3px #4e8097;
+}
+@media (min-width: 992px) {
+  #head .navbar-nav li a {
+    padding: 0;
+    border-bottom: 0;
+  }
 }
 a {
   color: #4e8097;
@@ -63,6 +91,41 @@ a.btn-primary:visited,
 a.btn-primary:hover,
 a.btn-primary:active {
   color: #fcf8f9;
+}
+.navbar-toggler {
+  border: 1px solid #4e8097;
+  background: transparent !important;
+}
+.navbar-toggler:hover {
+  background: transparent !important;
+}
+.navbar-toggler[aria-expanded="false"] .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler[aria-expanded="false"] .middle-bar {
+  opacity: 1;
+}
+.navbar-toggler[aria-expanded="false"] .bottom-bar {
+  transform: rotate(0);
+}
+.navbar-toggler .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+  background-color: #a31521;
+  height: 3px;
+  display: block;
+  margin: 4px 0;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg) translateX(4px);
+  transform-origin: 27% 0%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg) translateX(3px);
+  transform-origin: 14% 10%;
 }
 #head .owl-carousel .item {
   position: relative;
@@ -115,7 +178,7 @@ h1 {
 }
 .h1.bigtext,
 h1.bigtext {
-  font-size: 36px;
+  font-size: 54px;
 }
 @media (min-width: 992px) {
   .h1.bigtext,

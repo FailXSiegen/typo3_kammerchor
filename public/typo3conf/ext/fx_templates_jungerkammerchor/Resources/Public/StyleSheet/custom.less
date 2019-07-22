@@ -24,6 +24,9 @@
     }
   }
 }
+.navbar {
+  padding: 0;
+}
 .navbar-nav {
   border: 0;
   li {
@@ -42,9 +45,36 @@
         transform: scaleX(1);
       }
     }
+    a {
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+      @media(min-width:992px) {
+        padding: 0;
+      }
+    }
   }
 }
+#head .navbar-nav {
+  li {
+    &.current {
+      a {
+        border-bottom: 0;
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      padding: 8px 0;
+      border-bottom: solid 3px @blue;
+      @media(min-width:992px) {
+        padding: 0;
+        border-bottom: 0;
+      }
+    }
+  }
 
+}
 
 
 a {
@@ -70,6 +100,43 @@ a {
   }
 }
 
+.navbar-toggler {
+  border: 1px solid @blue;
+  background: transparent !important;
+  &:hover {
+    background: transparent !important;
+  }
+  &[aria-expanded="false"] {
+    .top-bar {
+      transform: rotate(0);
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+    background-color: @red;
+    height:3px;
+    display:block;
+    margin:4px 0;
+  }
+  .top-bar {
+    transform: rotate(45deg) translateX(4px);
+    transform-origin: 27% 0%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg) translateX(3px);
+    transform-origin: 14% 10%;
+  }
+}
 #head {
   .owl-carousel {
     .item {
@@ -127,7 +194,7 @@ footer {
   margin-bottom: 35px;
   font-family: 'Roboto Condensed', sans-serif;
   &.bigtext {
-    font-size: 36px;
+    font-size: 54px;
     @media(min-width:992px) {
       font-size: 136px;
     }
