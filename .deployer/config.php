@@ -6,14 +6,14 @@ require 'recipe/rsync.php';
 
 // Hosts
 host('prod')
-    ->hostname('domain.de')
-    ->user('sshuser')
-    ->set('deploy_path', '/path');
+    ->hostname('oc-vm39.riconnect.de')
+    ->user('c1_ssh_kammer')
+    ->set('deploy_path', '/var/www/clients/client1/web749/web/deployment');
 
 // Config
 set('bin_folder', './vendor/bin/');
 set('typo3_webroot', 'public');
-// set('yarn_path', 'path/to/extension');
+set('yarn_path', 'public/typo3conf/ext/fx_templates_jungerkammerchor/');
 
 add('shared_files', [
     '.env'
@@ -72,7 +72,7 @@ task('deploy', [
     'deploy:prepare',
     'deploy:lock',
     'build',
-    // 'yarn',
+    'yarn',
     'deploy:release',
     'rsync',
     'deploy:shared',
