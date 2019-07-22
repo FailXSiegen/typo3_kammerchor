@@ -1,0 +1,25 @@
+rootPageId: 1
+base: 'https://www.junger-kammerchor-siegen.de/'
+baseVariants:
+  -
+    base: 'http://local.junger-kammerchor-siegen.de'
+    condition: 'getenv("TYPO3_CONTEXT") == "Development"'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: '0'
+    base: /
+    typo3Language: de
+    locale: de_DE.UTF-8
+    iso-639-1: de
+    navigationTitle: Deutsch
+    hreflang: de-DE
+    direction: ''
+    flag: de
+errorHandling:
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=13'
+routes: {  }

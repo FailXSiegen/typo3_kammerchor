@@ -1,0 +1,32 @@
+language: php
+
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+
+sudo: true
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+notifications:
+  email:
+    recipients:
+      - info@failx.de
+    on_success: change
+    on_failure: change
+
+before_script:
+  - 'which ssh-agent || ( apk --no-cache add openssh-client )'
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+  - mkdir -p ~/.ssh
+  - chmod 700 ~/.ssh
+  - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+  - chmod 644 ~/.ssh/known_hosts
+  - composer global require -q --dev deployer/deployer:~6.4 deployphp/recipes:~6.2
+
+script:
+  - /home/php/.composer/vendor/bin/dep -f./.deployer/config.php deploy prod
