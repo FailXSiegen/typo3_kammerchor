@@ -3,7 +3,7 @@ TYPO3:
     Form:
       persistenceManager:
         allowedExtensionPaths:
-          20: EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/form/Yaml/
+          20: EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Form/Yaml/
         allowSaveToExtensionPaths: true
         allowDeleteFromExtensionPaths: true
 
