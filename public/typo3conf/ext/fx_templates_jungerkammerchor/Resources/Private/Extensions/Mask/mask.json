@@ -41,21 +41,122 @@
                     "Headerslider"
                 ],
                 "shortLabel": ""
+            },
+            "performanceinfos": {
+                "color": "#1e2cff",
+                "columns": [
+                    "header",
+                    "tx_mask_location",
+                    "tx_mask_gmapsembedd",
+                    "tx_mask_datumundeinlass",
+                    "tx_mask_price",
+                    "tx_mask_pricereduced",
+                    "tx_mask_priceinformation",
+                    "tx_mask_contactphone",
+                    "tx_mask_contactmail"
+                ],
+                "description": "Zusammenfassung der Informationen zum Auftritt",
+                "icon": "fa-info-circle",
+                "key": "performanceinfos",
+                "label": "Auftritt-Informationen",
+                "labels": [
+                    "Titel",
+                    "Adresse",
+                    "Google Maps Embed Code URL",
+                    "entrancedatetime",
+                    "Preis",
+                    "Preis reduziert",
+                    "Zus\u00e4tzliche Angaben zum Preis",
+                    "Telefon",
+                    "E-Mail Kontakt"
+                ],
+                "options": {
+                    "6": "rte"
+                },
+                "shortLabel": ""
             }
         },
         "sql": {
+            "tx_mask_contactmail": {
+                "tt_content": {
+                    "tx_mask_contactmail": "tinytext"
+                }
+            },
+            "tx_mask_contactphone": {
+                "tt_content": {
+                    "tx_mask_contactphone": "tinytext"
+                }
+            },
             "tx_mask_countto": {
                 "tt_content": {
                     "tx_mask_countto": "tinytext"
+                }
+            },
+            "tx_mask_datumundeinlass": {
+                "tt_content": {
+                    "tx_mask_datumundeinlass": "datetime"
+                }
+            },
+            "tx_mask_gmapsembedd": {
+                "tt_content": {
+                    "tx_mask_gmapsembedd": "tinytext"
                 }
             },
             "tx_mask_headerslider": {
                 "tt_content": {
                     "tx_mask_headerslider": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
+            },
+            "tx_mask_location": {
+                "tt_content": {
+                    "tx_mask_location": "mediumtext"
+                }
+            },
+            "tx_mask_price": {
+                "tt_content": {
+                    "tx_mask_price": "tinytext"
+                }
+            },
+            "tx_mask_priceinformation": {
+                "tt_content": {
+                    "tx_mask_priceinformation": "mediumtext"
+                }
+            },
+            "tx_mask_pricereduced": {
+                "tt_content": {
+                    "tx_mask_pricereduced": "tinytext"
+                }
             }
         },
         "tca": {
+            "tx_mask_contactmail": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "contactmail",
+                "l10n_mode": ""
+            },
+            "tx_mask_contactphone": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "contactphone",
+                "l10n_mode": ""
+            },
             "tx_mask_countto": {
                 "config": {
                     "default": "",
@@ -68,6 +169,38 @@
                 },
                 "exclude": "1",
                 "key": "countto",
+                "l10n_mode": ""
+            },
+            "tx_mask_datumundeinlass": {
+                "config": {
+                    "dbType": "datetime",
+                    "default": "",
+                    "eval": "datetime",
+                    "placeholder": "",
+                    "range": {
+                        "lower": "",
+                        "upper": ""
+                    },
+                    "renderType": "inputDateTime",
+                    "size": "20",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "datumundeinlass",
+                "l10n_mode": ""
+            },
+            "tx_mask_gmapsembedd": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "gmapsembedd",
                 "l10n_mode": ""
             },
             "tx_mask_headerslider": {
@@ -91,6 +224,65 @@
                 "inlineIcon": "",
                 "inlineLabel": "",
                 "key": "headerslider",
+                "l10n_mode": ""
+            },
+            "tx_mask_location": {
+                "config": {
+                    "cols": "",
+                    "default": "",
+                    "eval": "",
+                    "format": "",
+                    "max": "",
+                    "placeholder": "",
+                    "rows": "",
+                    "type": "text"
+                },
+                "exclude": "1",
+                "key": "location",
+                "l10n_mode": ""
+            },
+            "tx_mask_price": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "price",
+                "l10n_mode": ""
+            },
+            "tx_mask_priceinformation": {
+                "config": {
+                    "cols": "",
+                    "default": "",
+                    "enableRichtext": "1",
+                    "eval": "",
+                    "max": "",
+                    "placeholder": "",
+                    "richtextConfiguration": "default",
+                    "rows": "",
+                    "type": "text"
+                },
+                "exclude": "1",
+                "key": "priceinformation",
+                "l10n_mode": ""
+            },
+            "tx_mask_pricereduced": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "pricereduced",
                 "l10n_mode": ""
             }
         }

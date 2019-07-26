@@ -1,0 +1,49 @@
+<html data-namespace-typo3-fluid="true"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+    <div class="infobox d-flex flex-column p-3 clbg-red clfo-white">
+        <f:if condition="{data.header}">
+            <span class="h3">
+                <f:format.nl2br>{data.header}</f:format.nl2br>
+            </span>
+        </f:if>
+
+        <f:if condition="{data.tx_mask_datumundeinlass}">
+            <span class="datetimeentrance">
+                <b>Datum:</b> <f:format.date
+                    format="d.m.Y">{data.tx_mask_datumundeinlass}</f:format.date><br />
+                <b>Einlass:</b> <f:format.date
+                    format="H:i">{data.tx_mask_datumundeinlass}</f:format.date>
+            </span>
+        </f:if>
+        <f:if condition="{data.tx_mask_location}">
+            <span class="location">
+                <f:format.nl2br>{data.tx_mask_priceinformation}</f:format.nl2br>
+            </span>
+        </f:if>
+        <f:if condition="{data.tx_mask_price}">
+            <span class="price">
+                <b>Ticketpreis:</b> {data.tx_mask_price}
+            </span>
+        </f:if>
+        <f:if condition="{data.tx_mask_pricereduced}">
+            <span class="pricereduced">
+                <b>Ticketpreis (reduziert):</b> {data.tx_mask_pricereduced}
+            </span>
+        </f:if>
+
+        <f:if condition="{data.tx_mask_priceinformation}">
+            <span class="priceinformation">
+                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_mask_priceinformation}</f:format.html>
+            </span>
+        </f:if>
+        <f:if condition="{data.tx_mask_contactphone}">
+            <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;{data.tx_mask_contactphone}
+        </f:if>
+
+        <f:if condition="{data.tx_mask_contactmail}">
+            <i class="fa fa-email" aria-hidden="true"></i>&nbsp;<f:link.email email="{data.tx_mask_contactmail}">E-Mail Kontakt</f:link.email>
+        </f:if>
+    </div>
+</html>
+
+
