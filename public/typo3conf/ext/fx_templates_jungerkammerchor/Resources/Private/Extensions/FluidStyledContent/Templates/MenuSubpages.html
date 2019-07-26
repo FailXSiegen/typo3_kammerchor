@@ -11,12 +11,17 @@
                                 <a href="{page.link}" page.target, then: {f:if(condition: ' target="{page.target}"')}
                                 class="btn btn-primary w-100"
                                 title="{page.title}">
-                                {page.title}
+                                   {page.title}
                                 </a>
                             </h2>
                             <p class="card-text">
                                 <f:format.nl2br>{page.abstract}</f:format.nl2br>
                             </p>
+                            <a href="{page.link}" page.target, then: {f:if(condition: ' target="{page.target}"')}
+                            class="btn btn-primary w-100"
+                            title="{page.title}">
+                              Mehr Details
+                            </a>
                         </div>
                     </div>
                 </f:for>
