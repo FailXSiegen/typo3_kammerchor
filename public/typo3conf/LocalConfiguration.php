@@ -142,7 +142,7 @@ return [
         'sitename' => 'Junger Kammerchor Siegen-Süd',
         'systemLogLevel' => 3,
         'systemMaintainers' => [
-            2,
+            2,3
         ],
     ],
 ];

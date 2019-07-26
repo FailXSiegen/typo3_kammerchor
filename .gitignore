@@ -21,4 +21,4 @@ vendor/
 !/var/tests/.gitkeep
 /tests/Acceptance/Support/_generated
 deploy_rsa
-/public/typo3conf/LocalConfiguration.php
+!/public/typo3conf/LocalConfiguration.php
