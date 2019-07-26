@@ -16,7 +16,7 @@
             </span>
         </f:if>
         <f:if condition="{data.tx_mask_location}">
-            <span class="location">
+            <span class="location mb-3">
                 <f:format.nl2br>{data.tx_mask_priceinformation}</f:format.nl2br>
             </span>
         </f:if>
@@ -32,7 +32,7 @@
         </f:if>
 
         <f:if condition="{data.tx_mask_priceinformation}">
-            <span class="priceinformation">
+            <span class="priceinformation mb-3">
                 <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.tx_mask_priceinformation}</f:format.html>
             </span>
         </f:if>
@@ -42,6 +42,9 @@
 
         <f:if condition="{data.tx_mask_contactmail}">
             <i class="fa fa-email" aria-hidden="true"></i>&nbsp;<f:link.email email="{data.tx_mask_contactmail}">E-Mail Kontakt</f:link.email>
+        </f:if>
+        <f:if condition="{data.x_mask_gmapsembedd}">
+          <iframe src="{data.x_mask_gmapsembedd}" border="0" class="w-100 my-3" height="300"></iframe>
         </f:if>
     </div>
 </html>
