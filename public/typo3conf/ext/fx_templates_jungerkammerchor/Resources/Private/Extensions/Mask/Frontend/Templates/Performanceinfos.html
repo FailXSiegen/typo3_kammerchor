@@ -1,6 +1,6 @@
 <html data-namespace-typo3-fluid="true"
       xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
-    <div class="infobox d-flex flex-column p-3 clbg-red clfo-white mb-3">
+    <div class="infobox d-flex flex-column p-1 clbg-red clfo-white mb-3">
         <f:if condition="{data.header}">
             <span class="h3">
                 <f:format.nl2br>{data.header}</f:format.nl2br>
@@ -21,12 +21,12 @@
             </span>
         </f:if>
         <f:if condition="{data.tx_mask_price}">
-            <span class="price">
+            <span class="price text-nowrap">
                 <b>Ticketpreis:</b> {data.tx_mask_price}
             </span>
         </f:if>
         <f:if condition="{data.tx_mask_pricereduced}">
-            <span class="pricereduced">
+            <span class="pricereduced text-nowrap">
                 <b>Ticketpreis (reduziert):</b> {data.tx_mask_pricereduced}
             </span>
         </f:if>
