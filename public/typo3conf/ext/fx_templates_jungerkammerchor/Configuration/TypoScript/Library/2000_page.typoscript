@@ -100,4 +100,15 @@ page {
     meta {
         viewport = width=device-width, initial-scale=1.0
     }
+    headerData.1 = TEXT
+    headerData.1.value(
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144643286-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-144643286-1',{ 'anonymize_ip': true }));
+</script>
+    )
 }
