@@ -51,28 +51,28 @@
         {
             "@context": "https://schema.org",
             "@type": "Event",
-            "name": "<f:format.nl2br>{data.header}</f:format.nl2br>",
-            "startDate": "{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-dTh:m')}",
+            "name": "<f:format.raw><f:format.nl2br>{data.header}</f:format.nl2br></f:format.raw>",
+            "startDate": "<f:format.raw>{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-dTh:m')}</f:format.raw>",
             "location": {
                 "@type": "Place",
-                "name": "{data.tx_mask_location}",
+                "name": "<f:format.raw>{data.tx_mask_location}</f:format.raw>",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "{data.tx_mask_street} {data.tx_mask_adressnumber}",
-                    "addressLocality": "{data.tx_mask_city}",
-                    "postalCode": "{data.tx_mask_zip}",
-                    "addressRegion": "{data.tx_mask_region}",
-                    "addressCountry": "{data.tx_mask_country}"
+                    "streetAddress": "<f:format.raw>{data.tx_mask_street} {data.tx_mask_adressnumber}</f:format.raw>",
+                    "addressLocality": "<f:format.raw>{data.tx_mask_city}</f:format.raw>",
+                    "postalCode": "<f:format.raw>{data.tx_mask_zip}</f:format.raw>",
+                    "addressRegion": "<f:format.raw>{data.tx_mask_region}</f:format.raw>",
+                    "addressCountry": "<f:format.raw>{data.tx_mask_country}</f:format.raw>"
                 }
             },
             "description": "",
             "offers": {
                 "@type": "Offer",
-                "url": "{f:uri.page}",
-                "price": "{data.tx_mask_price}",
+                "url": "<f:format.raw>{f:uri.page}</f:format.raw>",
+                "price": "<f:format.raw>{data.tx_mask_price}</f:format.raw>",
                 "priceCurrency": "EUR",
                 "availability": "https://schema.org/InStock",
-                "validFrom": "{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-dTh:m')}"
+                "validFrom": "<f:format.raw>{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-dTh:m')}</f:format.raw>"
             },
             "performer": {
                 "@type": "PerformingGroup",
