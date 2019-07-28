@@ -52,7 +52,7 @@
             "@context": "https://schema.org",
             "@type": "Event",
             "name": "<f:format.raw><f:format.nl2br>{data.header}</f:format.nl2br></f:format.raw>",
-            "startDate": "<f:format.raw>{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-dTh:m')}</f:format.raw>",
+            "startDate": "<f:format.raw>{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-d')}T{data.tx_mask_datumundeinlass -> f:format.date(format:'H:i')}</f:format.raw>",
             "location": {
                 "@type": "Place",
                 "name": "<f:format.raw>{data.tx_mask_location}</f:format.raw>",
@@ -68,11 +68,11 @@
             "description": "",
             "offers": {
                 "@type": "Offer",
-                "url": "<f:format.raw>{f:uri.page}</f:format.raw>",
+                "url": "<f:format.raw>{f:uri.page(pageUid:data.pid)}</f:format.raw>",
                 "price": "<f:format.raw>{data.tx_mask_price}</f:format.raw>",
                 "priceCurrency": "EUR",
                 "availability": "https://schema.org/InStock",
-                "validFrom": "<f:format.raw>{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-dTh:m')}</f:format.raw>"
+                "validFrom": "<f:format.raw>{f:format.date(format:'Y-m-d')}T00:00}</f:format.raw>"
             },
             "performer": {
                 "@type": "PerformingGroup",
