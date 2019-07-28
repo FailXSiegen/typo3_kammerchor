@@ -30,6 +30,26 @@
                {data.tx_mask_zip} {data.tx_mask_city}
             </span>
         </f:if>
+        <f:if condition="{data.tx_mask_gmapsembedd}">
+            <div id="map" class="my-3"></div>
+            <script>
+
+              function initMap() {
+                var myLatLng = {lat: <f:format.raw>{data.tx_mask_gmapslat}</f:format.raw>, lng: <f:format.raw>{data.tx_mask_gmapslot}</f:format.raw>};
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 11,
+                  center: myLatLng
+                });
+
+                var marker = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map,
+                });
+              }
+            </script>
+        </f:if>
+
         <f:if condition="{data.tx_mask_price}">
             <span class="price text-nowrap mb-3">
                 <b>Ticketpreis:</b><br />{data.tx_mask_price -> f:format.currency(thousandsSeparator: ',', currencySign: 'EUR')}
@@ -53,25 +73,7 @@
         <f:if condition="{data.tx_mask_contactmail}">
             <i class="fa fa-email" aria-hidden="true"></i>&nbsp;<f:link.email email="{data.tx_mask_contactmail}" class="clfo-white">E-Mail Kontakt</f:link.email>
         </f:if>
-        <f:if condition="{data.tx_mask_gmapsembedd}">
-            <div id="map"></div>
-            <script>
 
-              function initMap() {
-                var myLatLng = {lat: <f:format.raw>{data.tx_mask_gmapslat}</f:format.raw>, lng: <f:format.raw>{data.tx_mask_gmapslot}</f:format.raw>};
-
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 11,
-                  center: myLatLng
-                });
-
-                var marker = new google.maps.Marker({
-                  position: myLatLng,
-                  map: map,
-                });
-              }
-            </script>
-        </f:if>
     </div>
     <script type="application/ld+json">
         {
