@@ -21,31 +21,6 @@ finishers:
       translation:
         language: ''
     identifier: EmailToReceiver
-  -
-    options:
-      table: tx_form_generic_record
-      mode: insert
-      databaseColumnMappings:
-        indentifier:
-          value: kontakt
-        pid:
-          value: '1'
-        tstamp:
-          value: '{__currentTimestamp}'
-        crdate:
-          value: '{__currentTimestamp}'
-      elements:
-        firstName:
-          mapOnDatabaseColumn: text_field_1
-        lastName:
-          mapOnDatabaseColumn: text_field_2
-        email:
-          mapOnDatabaseColumn: text_field_3
-        phone:
-          mapOnDatabaseColumn: text_field_4
-        note:
-          mapOnDatabaseColumn: text_area_1
-    identifier: SaveToDatabase
 renderables:
   -
     renderingOptions:
