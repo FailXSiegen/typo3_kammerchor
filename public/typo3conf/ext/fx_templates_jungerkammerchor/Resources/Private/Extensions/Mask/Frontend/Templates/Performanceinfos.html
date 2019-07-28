@@ -68,11 +68,11 @@
             "description": "",
             "offers": {
                 "@type": "Offer",
-                "url": "<f:format.raw>{f:uri.page(pageUid:data.pid)}</f:format.raw>",
+                "url": "<f:format.raw>{f:uri.page(pageUid:data.pid,absolute:1)}</f:format.raw>",
                 "price": "<f:format.raw>{data.tx_mask_price}</f:format.raw>",
                 "priceCurrency": "EUR",
                 "availability": "https://schema.org/InStock",
-                "validFrom": "<f:format.raw>{f:format.date(format:'Y-m-d')}T00:00}</f:format.raw>"
+                "validFrom": "<f:format.raw>{data.crdate -> f:format.date(format:'Y-m-d')}T00:00}</f:format.raw>"
             },
             "performer": {
                 "@type": "PerformingGroup",
