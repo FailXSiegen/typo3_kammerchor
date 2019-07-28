@@ -163,6 +163,9 @@ a.btn-primary:active {
 footer .nav-tabs .nav-item {
   white-space: nowrap;
 }
+footer a {
+  color: #315363;
+}
 .btn.btn-primary {
   background-color: #a31521;
   border-color: #a31521;
