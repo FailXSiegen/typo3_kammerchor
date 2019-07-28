@@ -22,12 +22,12 @@
         </f:if>
         <f:if condition="{data.tx_mask_price}">
             <span class="price text-nowrap mb-3">
-                <b>Ticketpreis:</b><br />{data.tx_mask_price}
+                <b>Ticketpreis:</b><br />{data.tx_mask_price -> f:format.currency(thousandsSeparator: ',', currencySign: 'EUR')}
             </span>
         </f:if>
         <f:if condition="{data.tx_mask_pricereduced}">
             <span class="pricereduced text-nowrap mb-3">
-                <b>Ticketpreis (reduziert):</b><br />{data.tx_mask_pricereduced}
+                <b>Ticketpreis (reduziert):</b><br />{data.tx_mask_pricereduced -> f:format.currency(thousandsSeparator: ',', currencySign: 'EUR')}
             </span>
         </f:if>
 
@@ -72,7 +72,7 @@
                 "price": "<f:format.raw>{data.tx_mask_price}</f:format.raw>",
                 "priceCurrency": "EUR",
                 "availability": "https://schema.org/InStock",
-                "validFrom": "<f:format.raw>{data.crdate -> f:format.date(format:'Y-m-d')}T00:00}</f:format.raw>"
+                "validFrom": "<f:format.raw>{data.crdate -> f:format.date(format:'Y-m-d')}T00:01}</f:format.raw>"
             },
             "performer": {
                 "@type": "PerformingGroup",
