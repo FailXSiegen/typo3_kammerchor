@@ -13,7 +13,7 @@ config {
     intTarget =
     linkVars = L
     metaCharset = utf-8
-    no_cache = 1
+    no_cache = 0
     pageTitleFirst = 1
     prefixLocalAnchors = all
     removeDefaultJS = 0
