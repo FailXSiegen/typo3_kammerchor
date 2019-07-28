@@ -45,7 +45,9 @@
         "t3monitor/t3monitoring_client": "^9.0",
         "mask/mask": "^4.1",
         "t3/min": "^1.7",
-        "lochmueller/staticfilecache": "^8.2"
+        "lochmueller/staticfilecache": "^8.2",
+        "jigal/t3adminer": "^9.3",
+        "plan2net/webp": "^1.1"
     },
     "require-dev": {
         "typo3/testing-framework": "^4.12.0",
