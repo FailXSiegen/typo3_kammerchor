@@ -25,4 +25,9 @@ config {
     compressJs = 1
     concatenateCss = 1
     concatenateJs = 1
+
+    spamProtectEmailAddresses = 2
+
+    sys_language_uid = 0
+    language = de
 }
