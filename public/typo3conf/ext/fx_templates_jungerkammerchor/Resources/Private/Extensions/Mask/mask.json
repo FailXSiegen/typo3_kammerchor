@@ -54,6 +54,8 @@
                     "tx_mask_region",
                     "tx_mask_country",
                     "tx_mask_gmapsembedd",
+                    "tx_mask_gmapslat",
+                    "tx_mask_gmapslot",
                     "tx_mask_datumundeinlass",
                     "tx_mask_price",
                     "tx_mask_pricereduced",
@@ -75,6 +77,8 @@
                     "Bundesland",
                     "Land",
                     "Google Maps Embed Code URL",
+                    "Latitude",
+                    "Longitude",
                     "entrancedatetime",
                     "Preis",
                     "Preis reduziert",
@@ -83,7 +87,7 @@
                     "E-Mail Kontakt"
                 ],
                 "options": {
-                    "12": "rte"
+                    "14": "rte"
                 },
                 "shortLabel": ""
             }
@@ -127,6 +131,16 @@
             "tx_mask_gmapsembedd": {
                 "tt_content": {
                     "tx_mask_gmapsembedd": "tinytext"
+                }
+            },
+            "tx_mask_gmapslat": {
+                "tt_content": {
+                    "tx_mask_gmapslat": "tinytext"
+                }
+            },
+            "tx_mask_gmapslot": {
+                "tt_content": {
+                    "tx_mask_gmapslot": "tinytext"
                 }
             },
             "tx_mask_headerslider": {
@@ -285,6 +299,34 @@
                 },
                 "exclude": "1",
                 "key": "gmapsembedd",
+                "l10n_mode": ""
+            },
+            "tx_mask_gmapslat": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "gmapslat",
+                "l10n_mode": ""
+            },
+            "tx_mask_gmapslot": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "gmapslot",
                 "l10n_mode": ""
             },
             "tx_mask_headerslider": {

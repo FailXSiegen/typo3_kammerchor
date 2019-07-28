@@ -54,7 +54,23 @@
             <i class="fa fa-email" aria-hidden="true"></i>&nbsp;<f:link.email email="{data.tx_mask_contactmail}" class="clfo-white">E-Mail Kontakt</f:link.email>
         </f:if>
         <f:if condition="{data.tx_mask_gmapsembedd}">
-          <iframe src="{data.tx_mask_gmapsembedd}" border="0" class="w-100 my-3" height="300"></iframe>
+            <div id="map"></div>
+            <script>
+
+              function initMap() {
+                var myLatLng = {lat: <f:format.raw>{data.tx_mask_gmapslat}</f:format.raw>, lng: <f:format.raw>{data.tx_mask_gmapslot}</f:format.raw>};
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 5,
+                  center: myLatLng
+                });
+
+                var marker = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map,
+                });
+              }
+            </script>
         </f:if>
     </div>
     <script type="application/ld+json">
