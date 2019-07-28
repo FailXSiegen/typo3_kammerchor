@@ -113,7 +113,7 @@ page {
     )
 
 }
-[3 in tree.rootLineIds]
+[page["pid"] == 3]
     page.includeJSFooter {
         gmaps = https://maps.googleapis.com/maps/api/js?key=AIzaSyDo_Fyt_QrO9Yl46U1d6n-rxl3-_NhFUt8&callback=initMap
         gmaps.external = 1
