@@ -47,6 +47,40 @@
           <iframe src="{data.x_mask_gmapsembedd}" border="0" class="w-100 my-3" height="300"></iframe>
         </f:if>
     </div>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "<f:format.nl2br>{data.header}</f:format.nl2br>",
+            "startDate": "{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-dTh:m')}",
+            "location": {
+                "@type": "Place",
+                "name": "{data.tx_mask_location}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "{data.tx_mask_street} {data.tx_mask_adressnumber}",
+                    "addressLocality": "{data.tx_mask_city}",
+                    "postalCode": "{data.tx_mask_zip}",
+                    "addressRegion": "{data.tx_mask_region}",
+                    "addressCountry": "{data.tx_mask_country}"
+                }
+            },
+            "description": "",
+            "offers": {
+                "@type": "Offer",
+                "url": "{f:uri.page}",
+                "price": "{data.tx_mask_price}",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-dTh:m')}"
+            },
+            "performer": {
+                "@type": "PerformingGroup",
+                "name": "Junger Kammerchor Siegen-Süd"
+            }
+        }
+    </script>
+
 </html>
 
 

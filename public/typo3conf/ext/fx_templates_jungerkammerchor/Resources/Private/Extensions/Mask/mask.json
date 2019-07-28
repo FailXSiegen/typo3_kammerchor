@@ -47,6 +47,12 @@
                 "columns": [
                     "header",
                     "tx_mask_location",
+                    "tx_mask_street",
+                    "tx_mask_adressnumber",
+                    "tx_mask_zip",
+                    "tx_mask_city",
+                    "tx_mask_region",
+                    "tx_mask_country",
                     "tx_mask_gmapsembedd",
                     "tx_mask_datumundeinlass",
                     "tx_mask_price",
@@ -61,7 +67,13 @@
                 "label": "Auftritt-Informationen",
                 "labels": [
                     "Titel",
-                    "Adresse",
+                    "Ortzbezeichnung",
+                    "Stra\u00dfe",
+                    "Hausnummer",
+                    "PLZ",
+                    "Stadt",
+                    "Bundesland",
+                    "Land",
                     "Google Maps Embed Code URL",
                     "entrancedatetime",
                     "Preis",
@@ -71,12 +83,22 @@
                     "E-Mail Kontakt"
                 ],
                 "options": {
-                    "6": "rte"
+                    "12": "rte"
                 },
                 "shortLabel": ""
             }
         },
         "sql": {
+            "tx_mask_adressnumber": {
+                "tt_content": {
+                    "tx_mask_adressnumber": "tinytext"
+                }
+            },
+            "tx_mask_city": {
+                "tt_content": {
+                    "tx_mask_city": "tinytext"
+                }
+            },
             "tx_mask_contactmail": {
                 "tt_content": {
                     "tx_mask_contactmail": "tinytext"
@@ -85,6 +107,11 @@
             "tx_mask_contactphone": {
                 "tt_content": {
                     "tx_mask_contactphone": "tinytext"
+                }
+            },
+            "tx_mask_country": {
+                "tt_content": {
+                    "tx_mask_country": "tinytext"
                 }
             },
             "tx_mask_countto": {
@@ -109,7 +136,7 @@
             },
             "tx_mask_location": {
                 "tt_content": {
-                    "tx_mask_location": "mediumtext"
+                    "tx_mask_location": "tinytext"
                 }
             },
             "tx_mask_price": {
@@ -126,9 +153,52 @@
                 "tt_content": {
                     "tx_mask_pricereduced": "tinytext"
                 }
+            },
+            "tx_mask_region": {
+                "tt_content": {
+                    "tx_mask_region": "tinytext"
+                }
+            },
+            "tx_mask_street": {
+                "tt_content": {
+                    "tx_mask_street": "tinytext"
+                }
+            },
+            "tx_mask_zip": {
+                "tt_content": {
+                    "tx_mask_zip": "tinytext"
+                }
             }
         },
         "tca": {
+            "tx_mask_adressnumber": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "adressnumber",
+                "l10n_mode": ""
+            },
+            "tx_mask_city": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "city",
+                "l10n_mode": ""
+            },
             "tx_mask_contactmail": {
                 "config": {
                     "default": "",
@@ -155,6 +225,20 @@
                 },
                 "exclude": "1",
                 "key": "contactphone",
+                "l10n_mode": ""
+            },
+            "tx_mask_country": {
+                "config": {
+                    "default": "DE",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "country",
                 "l10n_mode": ""
             },
             "tx_mask_countto": {
@@ -228,14 +312,13 @@
             },
             "tx_mask_location": {
                 "config": {
-                    "cols": "",
                     "default": "",
                     "eval": "",
-                    "format": "",
+                    "is_in": "",
                     "max": "",
                     "placeholder": "",
-                    "rows": "",
-                    "type": "text"
+                    "size": "",
+                    "type": "input"
                 },
                 "exclude": "1",
                 "key": "location",
@@ -283,6 +366,48 @@
                 },
                 "exclude": "1",
                 "key": "pricereduced",
+                "l10n_mode": ""
+            },
+            "tx_mask_region": {
+                "config": {
+                    "default": "Nordrhein-Westfalen",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "region",
+                "l10n_mode": ""
+            },
+            "tx_mask_street": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "street",
+                "l10n_mode": ""
+            },
+            "tx_mask_zip": {
+                "config": {
+                    "default": "",
+                    "eval": "",
+                    "is_in": "",
+                    "max": "",
+                    "placeholder": "",
+                    "size": "",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "zip",
                 "l10n_mode": ""
             }
         }
