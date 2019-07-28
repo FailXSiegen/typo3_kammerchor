@@ -17,7 +17,17 @@
         </f:if>
         <f:if condition="{data.tx_mask_location}">
             <span class="location my-3">
-                <f:format.nl2br>{data.tx_mask_location}</f:format.nl2br>
+                <f:format.nl2br>{data.tx_mask_location} </f:format.nl2br>
+            </span>
+        </f:if>
+        <f:if condition="{data.tx_mask_location}">
+            <span class="address">
+               {data.tx_mask_street} {data.tx_mask_adressnumber}
+            </span>
+        </f:if>
+        <f:if condition="{data.tx_mask_location}">
+            <span class="zip">
+               {data.tx_mask_zip} {data.tx_mask_city}
             </span>
         </f:if>
         <f:if condition="{data.tx_mask_price}">
