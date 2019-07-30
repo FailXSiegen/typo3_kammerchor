@@ -12,7 +12,7 @@ plugin {
             # cat=plugin.tx_fxtemplatesjungerkammerchor/basic/11; type=string; label=CTA Navigation path id
             ctaNavPageUid =
             # cat=plugin.tx_fxtemplatesjungerkammerchor/basic/12; type=string; label=Logo path
-            logoPath = EXT:fx_templates_jungerkammerchor/Resources/Public/Images/logo_farbe.png
+            logoPath = EXT:fx_templates_jungerkammerchor/Resources/Public/Images/logo_02.png
         }
     }
 }
