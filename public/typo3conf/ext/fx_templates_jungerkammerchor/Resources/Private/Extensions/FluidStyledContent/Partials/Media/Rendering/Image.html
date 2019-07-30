@@ -5,9 +5,9 @@
     </f:comment>
     <picture>
         <source media="(min-width: 1600px)"
-                srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',cropVariant:'default')}">
+                srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'{dimensions.width}',cropVariant:'default')}">
         <source media="(max-width: 1199px) and (min-width:992px)"
-                srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',maxWidth:'1200',cropVariant:'desktop-md')}">
+                srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'1200m',cropVariant:'desktop-md')}">
         <source media="(max-width: 991px) and (orientation:portrait)"
                 srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'991m',cropVariant:'tablet-portrait')}">
         <source media="(max-width: 991px) and (orientation:landscape)"
