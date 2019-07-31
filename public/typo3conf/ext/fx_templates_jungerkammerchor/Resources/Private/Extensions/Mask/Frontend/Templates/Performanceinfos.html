@@ -80,7 +80,10 @@
             "@context": "https://schema.org",
             "@type": "Event",
             "name": "<f:format.raw><f:format.nl2br>{data.header}</f:format.nl2br></f:format.raw>",
+            "image": "<f:format.raw>{f:uri.image(src:data.tx_mask_eventimage.0.uid,treatIdAsReference:1,absolute:1)}</f:format.raw>",
+            "description": "<f:format.raw>{data.tx_mask_eventteaser -> f:format.nl2br()}</f:format.raw>",
             "startDate": "<f:format.raw>{data.tx_mask_datumundeinlass -> f:format.date(format:'Y-m-d')}T{data.tx_mask_datumundeinlass -> f:format.date(format:'H:i')}</f:format.raw>",
+            "endDate": "<f:format.raw>{data.tx_mask_enddatetime -> f:format.date(format:'Y-m-d')}T{data.tx_mask_enddatetime -> f:format.date(format:'H:i')}</f:format.raw>",
             "location": {
                 "@type": "Place",
                 "name": "<f:format.raw>{data.tx_mask_location}</f:format.raw>",
@@ -93,7 +96,7 @@
                     "addressCountry": "<f:format.raw>{data.tx_mask_country}</f:format.raw>"
                 }
             },
-            "description": "",
+
             "offers": {
                 "@type": "Offer",
                 "url": "<f:format.raw>{f:uri.page(pageUid:data.pid,absolute:1)}</f:format.raw>",

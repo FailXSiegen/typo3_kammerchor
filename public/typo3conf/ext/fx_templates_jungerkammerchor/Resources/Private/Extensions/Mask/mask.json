@@ -1,6 +1,11 @@
 {
     "sys_file_reference": {
         "sql": {
+            "tx_mask_eventimage": {
+                "sys_file_reference": {
+                    "tx_mask_eventimage": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
             "tx_mask_headerpic": {
                 "sys_file_reference": {
                     "tx_mask_headerpic": "int(11) unsigned DEFAULT '0' NOT NULL"
@@ -46,6 +51,7 @@
                 "color": "#1e2cff",
                 "columns": [
                     "header",
+                    "tx_mask_eventteaser",
                     "tx_mask_location",
                     "tx_mask_street",
                     "tx_mask_adressnumber",
@@ -57,11 +63,13 @@
                     "tx_mask_gmapslat",
                     "tx_mask_gmapslot",
                     "tx_mask_datumundeinlass",
+                    "tx_mask_enddatetime",
                     "tx_mask_price",
                     "tx_mask_pricereduced",
                     "tx_mask_priceinformation",
                     "tx_mask_contactphone",
-                    "tx_mask_contactmail"
+                    "tx_mask_contactmail",
+                    "tx_mask_eventimage"
                 ],
                 "description": "Zusammenfassung der Informationen zum Auftritt",
                 "icon": "fa-info-circle",
@@ -69,6 +77,7 @@
                 "label": "Auftritt-Informationen",
                 "labels": [
                     "Titel",
+                    "Beschreibung",
                     "Ortzbezeichnung",
                     "Stra\u00dfe",
                     "Hausnummer",
@@ -79,15 +88,17 @@
                     "Google Maps Embed Code URL",
                     "Latitude",
                     "Longitude",
-                    "entrancedatetime",
+                    "Datum und Einlass",
+                    "Enddatum",
                     "Preis",
                     "Preis reduziert",
                     "Zus\u00e4tzliche Angaben zum Preis",
                     "Telefon",
-                    "E-Mail Kontakt"
+                    "E-Mail Kontakt",
+                    "Bild"
                 ],
                 "options": {
-                    "14": "rte"
+                    "16": "rte"
                 },
                 "shortLabel": ""
             }
@@ -126,6 +137,21 @@
             "tx_mask_datumundeinlass": {
                 "tt_content": {
                     "tx_mask_datumundeinlass": "datetime"
+                }
+            },
+            "tx_mask_enddatetime": {
+                "tt_content": {
+                    "tx_mask_enddatetime": "datetime"
+                }
+            },
+            "tx_mask_eventimage": {
+                "tt_content": {
+                    "tx_mask_eventimage": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_eventteaser": {
+                "tt_content": {
+                    "tx_mask_eventteaser": "mediumtext"
                 }
             },
             "tx_mask_gmapsembedd": {
@@ -285,6 +311,56 @@
                 },
                 "exclude": "1",
                 "key": "datumundeinlass",
+                "l10n_mode": ""
+            },
+            "tx_mask_enddatetime": {
+                "config": {
+                    "dbType": "datetime",
+                    "default": "",
+                    "eval": "datetime",
+                    "placeholder": "",
+                    "range": {
+                        "lower": "",
+                        "upper": ""
+                    },
+                    "renderType": "inputDateTime",
+                    "size": "20",
+                    "type": "input"
+                },
+                "exclude": "1",
+                "key": "enddatetime",
+                "l10n_mode": ""
+            },
+            "tx_mask_eventimage": {
+                "config": {
+                    "filter": [
+                        {
+                            "parameters": {
+                                "allowedFileExtensions": ""
+                            }
+                        }
+                    ],
+                    "maxitems": "",
+                    "minitems": ""
+                },
+                "exclude": "1",
+                "key": "eventimage",
+                "l10n_mode": "",
+                "options": "file"
+            },
+            "tx_mask_eventteaser": {
+                "config": {
+                    "cols": "",
+                    "default": "",
+                    "eval": "",
+                    "format": "",
+                    "max": "",
+                    "placeholder": "",
+                    "rows": "",
+                    "type": "text"
+                },
+                "exclude": "1",
+                "key": "eventteaser",
                 "l10n_mode": ""
             },
             "tx_mask_gmapsembedd": {
