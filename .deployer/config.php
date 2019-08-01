@@ -33,7 +33,10 @@ set('rsync',[
         'docker-compose.yml',
         'public/fileadmin',
         'public/uploads',
-        'README.md'
+        'README.md',
+        'deploy_rsa',
+        'deploy_rsa.enc',
+        '.travis.yml'
     ],
     'exclude-file' => false,
     'include'      => [],
