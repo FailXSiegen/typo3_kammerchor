@@ -5,9 +5,9 @@
     </f:comment>
     <picture>
         <source media="(min-width: 1600px)"
-                srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'{dimensions.width}',cropVariant:'default')}.webp" type="image/webp">
+                srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'{dimensions.width}',maxWidth: '1920',cropVariant:'default')}.webp" type="image/webp">
         <source media="(min-width: 1600px)"
-                srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'{dimensions.width}',cropVariant:'default')}">
+                srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'{dimensions.width}',maxWidth: '1920',cropVariant:'default')}">
         <source media="(max-width: 1199px) and (min-width:992px)"
                 srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'1200m',cropVariant:'desktop-md')}.webp" type="image/webp">
         <source media="(max-width: 1199px) and (min-width:992px)"
@@ -28,7 +28,7 @@
                 srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'767m',cropVariant:'smartphone-landscape')}.webp" type="image/webp">
         <source media="(max-width: 767px) and (orientation:landscape)"
                 srcset="{f:uri.image(src:'{file.uid}',treatIdAsReference:'1',width:'767m',cropVariant:'smartphone-landscape')}">
-        <f:image treatIdAsReference="1" class="image-embed-item  img img-fluid" width="{dimensions.width}"
+        <f:image treatIdAsReference="1" class="image-embed-item  img img-fluid" width="{dimensions.width}" maxWidth="1920"
                  height="{dimensions.height}" src="{file.uid}" title="{file.title}" alt="{file.alternative}"
                  crop="{file.crop}" />
     </picture>
