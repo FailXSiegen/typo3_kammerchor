@@ -8,12 +8,7 @@
                         <f:if condition="{logoPath}">
                             <div class="col-6 col-md-3 col-lg-12" itemscope itemtype="http://schema.org/Organization">
                                 <f:link.typolink parameter="{rootPageUid}" additionalAttributes="{'itemprop':'url'}">
-                                    <picture>
-                                        <source srcset="{f:uri.image(src:'{logoPath}',treatIdAsReference:'0',width:'350m')}.webp" type="image/webp">
-                                        <source srcset="{f:uri.image(src:'{logoPath}',treatIdAsReference:'0',width:'350m')}">
-                                        <f:image src="{logoPath}" class="logo img img-fluid" alt="Logo" width="350m" />
-                                    </picture>
-
+                                    <f:image src="{logoPath}" class="logo img img-fluid" alt="Logo" width="350m" />
                                 </f:link.typolink>
                             </div>
                         </f:if>
