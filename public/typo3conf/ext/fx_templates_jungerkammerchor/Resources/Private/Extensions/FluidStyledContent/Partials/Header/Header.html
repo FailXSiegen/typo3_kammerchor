@@ -2,12 +2,12 @@
 <f:if condition="{header}">
     <f:switch expression="{layout}">
         <f:case value="1">
-            <h1 class="{positionClass} {headercase}">
+            <h1 class="{positionClass} {headercase} {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </h1>
         </f:case>
         <f:case value="2">
-            <h2 class="{positionClass} {headercase}">
+            <h2 class="{positionClass} {headercase} {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </h2>
         </f:case>
@@ -17,42 +17,42 @@
             </h3>
         </f:case>
         <f:case value="4">
-            <h4 class="{positionClass} {headercase}">
+            <h4 class="{positionClass} {headercase} {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </h4>
         </f:case>
         <f:case value="5">
-            <h5 class="{positionClass} {headercase}">
+            <h5 class="{positionClass} {headercase} {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </h5>
         </f:case>
         <f:case value="6">
-            <span class="{positionClass} {headercase} h1">
+            <span class="{positionClass} {headercase} h1 {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </span>
         </f:case>
         <f:case value="7">
-            <span class="{positionClass} {headercase} h2">
+            <span class="{positionClass} {headercase} h2 {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </span>
         </f:case>
         <f:case value="8">
-            <span class="{positionClass} {headercase} h3">
+            <span class="{positionClass} {headercase} h3 {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </span>
         </f:case>
         <f:case value="9">
-            <span class="{positionClass} {headercase} h4">
+            <span class="{positionClass} {headercase} h4 {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </span>
         </f:case>
         <f:case value="10">
-            <span class="{positionClass} {headercase} h5">
+            <span class="{positionClass} {headercase} h5 {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </span>
         </f:case>
         <f:case value="11">
-            <span class="{positionClass} {headercase} bigtext">
+            <span class="{positionClass} {headercase} bigtext {f:if(condition:'{subheader}',then:'hasSubHeader')}">
                 <f:link.typolink parameter="{link}"><f:format.nl2br>{header}</f:format.nl2br></f:link.typolink>
             </span>
         </f:case>
