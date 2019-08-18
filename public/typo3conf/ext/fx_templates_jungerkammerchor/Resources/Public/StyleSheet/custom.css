@@ -227,6 +227,19 @@ p a.btn-primary {
   margin-bottom: 10px;
 }
 .ce-bodytext ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ce-bodytext ul li {
+  position: relative;
   padding-left: 17px;
+}
+.ce-bodytext ul li:before {
+  content: '♫';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=custom.css.map */
