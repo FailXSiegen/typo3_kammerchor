@@ -234,6 +234,7 @@ p a.btn-primary {
 .ce-bodytext ul li {
   position: relative;
   padding-left: 17px;
+  margin-bottom: 10px;
 }
 .ce-bodytext ul li:before {
   content: '♫';
