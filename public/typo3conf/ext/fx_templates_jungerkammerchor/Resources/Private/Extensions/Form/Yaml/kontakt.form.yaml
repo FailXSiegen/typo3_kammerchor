@@ -7,6 +7,7 @@ label: Kontakt
 prototypeName: standard
 finishers:
   -
+    identifier: EmailToReceiver
     options:
       subject: Kontaktformular
       recipientAddress:
@@ -20,7 +21,11 @@ finishers:
       attachUploads: true
       translation:
         language: ''
-    identifier: EmailToReceiver
+  -
+    identifier: Redirect
+    options:
+      pageUid: 17
+      additionalParameters: ''
 renderables:
   -
     renderingOptions:
