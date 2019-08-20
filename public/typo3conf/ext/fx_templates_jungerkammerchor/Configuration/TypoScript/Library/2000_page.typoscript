@@ -99,6 +99,7 @@ page {
     }
     meta {
         viewport = width=device-width, initial-scale=1.0
+        google-site-verification = LZDSRpspOXV3wc9NrQRdy9E5EmMfPTxwc9i4My4JIPs
     }
     headerData.1 = TEXT
     headerData.1.value(
@@ -111,6 +112,8 @@ page {
   gtag('config', 'UA-144643286-1',{ 'anonymize_ip': true });
 </script>
     )
+
+
 
 }
 [page["pid"] == 3]
