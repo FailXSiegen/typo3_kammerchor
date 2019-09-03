@@ -142,3 +142,13 @@ page.headerData.500.value (
 /></noscript>
 <!-- End Facebook Pixel Code -->
 )
+
+
+[page["pid"] == 14]
+    page.headerData.501 = TEXT
+    page.headerData.501.value (
+    <script>
+      fbq('track', 'ViewContent');
+    </script>
+    )
+[end]
