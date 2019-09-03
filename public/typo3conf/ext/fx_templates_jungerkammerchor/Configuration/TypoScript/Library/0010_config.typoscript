@@ -1,6 +1,5 @@
 config {
     contentObjectExceptionHandler = 0
-    absRefPrefix = auto
     cache_period = 86400
     debug = 0
     disablePrefixComment = 1
@@ -30,4 +29,5 @@ config {
 
     sys_language_uid = 0
     language = de
+    absRefPrefix = auto
 }
