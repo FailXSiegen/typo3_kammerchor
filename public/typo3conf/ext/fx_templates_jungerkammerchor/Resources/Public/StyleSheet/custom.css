@@ -249,4 +249,9 @@ p a.btn-primary {
 .ce-column + .ce-column {
   margin-top: 15px;
 }
+@media (min-width: 768px) {
+  .ce-column + .ce-column {
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=custom.css.map */
