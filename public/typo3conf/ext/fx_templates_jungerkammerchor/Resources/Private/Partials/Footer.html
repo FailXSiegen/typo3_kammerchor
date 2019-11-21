@@ -15,7 +15,7 @@
                             <f:for as="menu" each="{footerNavigation}">
                                 <li class="nav-item dropdown l1 col" itemprop="name">
                                     <a href="{menu.link}"
-                                       {f:if(condition:menu.target,then: 'target="{menu.target}"')}
+                                       {f:if(condition:menu.target,then: 'target="{menu.target}" rel="noopener"')}
                                     itemprop="url"
                                     title="{menu.title}">
                                     {menu.title}
