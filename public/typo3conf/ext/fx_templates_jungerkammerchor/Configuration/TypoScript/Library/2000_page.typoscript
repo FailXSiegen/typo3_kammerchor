@@ -103,6 +103,7 @@ page {
     }
     headerData.1 = TEXT
     headerData.1.value(
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="904565ce-4424-462c-b5eb-c24d2e48deb2" data-blockingmode="auto" type="text/javascript"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144643286-1"></script>
 <script>
