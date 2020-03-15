@@ -103,10 +103,10 @@ page {
     }
     headerData.1 = TEXT
     headerData.1.value(
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="904565ce-4424-462c-b5eb-c24d2e48deb2" data-blockingmode="auto" type="text/javascript"></script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="904565ce-4424-462c-b5eb-c24d2e48deb2" type="text/javascript" async></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144643286-1"></script>
-<script>
+<script type="text/plain" data-cookieconsent="statistics"  async src="https://www.googletagmanager.com/gtag/js?id=UA-144643286-1"></script>
+<script type="text/plain" data-cookieconsent="statistics" >
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -119,14 +119,14 @@ page {
 }
 [page["pid"] == 3]
     page.footerData.1 = TEXT
-    page.footerData.1.value = <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo_Fyt_QrO9Yl46U1d6n-rxl3-_NhFUt8&callback=initMap" async defer></script>
+    page.footerData.1.value = <script type="text/plain" data-cookieconsent="statistics" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo_Fyt_QrO9Yl46U1d6n-rxl3-_NhFUt8&callback=initMap" async defer></script>
 [end]
 
 
 page.headerData.500 = TEXT
 page.headerData.500.value (
 <!-- Facebook Pixel Code -->
-<script>
+<script type="text/plain" data-cookieconsent="marketing">
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -148,7 +148,7 @@ page.headerData.500.value (
 [page["pid"] == 14]
     page.headerData.501 = TEXT
     page.headerData.501.value (
-    <script>
+    <script type="text/plain" data-cookieconsent="marketing">
       fbq('track', 'ViewContent');
     </script>
     )
