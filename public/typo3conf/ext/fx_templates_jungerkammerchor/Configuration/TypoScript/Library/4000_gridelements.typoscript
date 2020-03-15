@@ -14,6 +14,14 @@ lib.gridelements.defaultGridSetup {
         10 = EXT:gridelements/Resources/Private/Templates/
         20 = EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/GridElements/
     }
+    dataProcessing {
+        10 = Failx\FxTemplatesJungerkammerchor\DataProcessing\GridChildrenProcessor
+        10 {
+            default {
+                as = children
+            }
+        }
+    }
 }
 tt_content.gridelements_pi1 < lib.gridelements.defaultGridSetup
 tt_content.gridelements_view < tt_content.gridelements_pi1

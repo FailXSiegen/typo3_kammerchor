@@ -34,6 +34,7 @@ return [
             'mask' => 'a:9:{s:4:"json";s:77:"EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Mask/mask.json";s:18:"backendlayout_pids";s:3:"0,1";s:7:"content";s:86:"EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Mask/Frontend/Templates";s:7:"layouts";s:84:"EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Mask/Frontend/Layouts";s:8:"partials";s:85:"EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Mask/Frontend/Partials";s:7:"backend";s:85:"EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Mask/Backend/Templates";s:15:"layouts_backend";s:83:"EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Mask/Backend/Layouts";s:16:"partials_backend";s:84:"EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Mask/Backend/Partials";s:7:"preview";s:84:"EXT:fx_templates_jungerkammerchor/Resources/Private/Extensions/Mask/Backend/Previews";}',
             'scheduler' => 'a:2:{s:11:"maxLifetime";s:4:"1440";s:15:"showSampleTasks";s:1:"1";}',
             'staticfilecache' => 'a:25:{s:23:"clearCacheForAllDomains";s:1:"1";s:23:"showGenerationSignature";s:1:"1";s:9:"fileTypes";s:7:"xml,rss";s:8:"strftime";s:14:"%d-%m-%y %H:%M";s:11:"recreateURI";s:1:"0";s:9:"boostMode";s:1:"0";s:18:"backendDisplayMode";s:4:"both";s:20:"disableInDevelopment";s:1:"0";s:25:"renameTablesToOtherPrefix";s:1:"0";s:20:"htaccessTemplateName";s:61:"EXT:staticfilecache/Resources/Private/Templates/Htaccess.html";s:13:"saveCacheHook";s:17:"InsertPageIncache";s:22:"overrideCacheDirectory";s:0:"";s:23:"enableGeneratorManifest";s:1:"0";s:20:"enableGeneratorPlain";s:1:"1";s:19:"enableGeneratorGzip";s:1:"1";s:21:"enableGeneratorBrotli";s:1:"0";s:22:"sendCacheControlHeader";s:1:"1";s:47:"sendCacheControlHeaderRedirectAfterCacheTimeout";s:1:"0";s:16:"sendTypo3Headers";s:1:"0";s:25:"sendStaticFileCacheHeader";s:1:"1";s:15:"cacheTagsEnable";s:1:"0";s:19:"cacheTagsHeaderName";s:12:"X-Cache-Tags";s:19:"sendHttp2PushEnable";s:1:"0";s:27:"sendHttp2PushFileExtensions";s:6:"css,js";s:22:"sendHttp2PushFileLimit";s:2:"10";}',
+            't3adminer' => 'a:3:{s:8:"IPaccess";s:0:"";s:14:"applyDevIpMask";s:1:"0";s:15:"exportDirectory";s:9:"fileadmin";}',
             't3monitoring_client' => 'a:3:{s:6:"secret";s:0:"";s:10:"allowedIps";s:1:"*";s:20:"enableDebugForErrors";s:1:"0";}',
         ],
     ],
@@ -100,6 +101,11 @@ return [
             'showGenerationSignature' => '1',
             'strftime' => '%d-%m-%y %H:%M',
         ],
+        't3adminer' => [
+            'IPaccess' => '',
+            'applyDevIpMask' => '0',
+            'exportDirectory' => 'fileadmin',
+        ],
         't3monitoring_client' => [
             'allowedIps' => '*',
             'enableDebugForErrors' => '0',
@@ -142,7 +148,8 @@ return [
         'sitename' => 'Junger Kammerchor Siegen-Süd',
         'systemLogLevel' => 3,
         'systemMaintainers' => [
-            2,3
+            2,
+            3,
         ],
     ],
 ];
