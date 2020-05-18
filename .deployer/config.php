@@ -72,6 +72,7 @@ task('yarn', function () {
 // });
 
 task('deploy', [
+    'deploy:unlock',
     'deploy:prepare',
     'deploy:lock',
     'build',
