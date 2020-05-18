@@ -13,7 +13,7 @@
                          itemtype="http://schema.org/SiteNavigationElement">
                         <ul class="nav navbar-nav nav-tabs ">
                             <f:for as="menu" each="{footerNavigation}">
-                                <li class="nav-item dropdown l1 col" itemprop="name">
+                                <li class="nav-item dropdown l1 col col-sm-auto" itemprop="name">
                                     <a href="{menu.link}"
                                        {f:if(condition:menu.target,then: 'target="{menu.target}" rel="noopener"')}
                                     itemprop="url"
