@@ -11,7 +11,7 @@
 					errorClass="{element.properties.elementErrorClassAttribute}"
 					additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
 				/>
-				<span>{formvh:translateElementProperty(element: element, property: 'label')}<f:if condition="{element.required}"><f:render partial="Field/Required" /></f:if></span>
+				<f:format.raw><span>{formvh:translateElementProperty(element: element, property: 'label')}<f:if condition="{element.required}"><f:render partial="Field/Required" /></f:if></span></f:format.raw>
 			</label>
 		</div>
 	</f:render>
