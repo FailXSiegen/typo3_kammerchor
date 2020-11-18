@@ -10,9 +10,8 @@
     "GPL-3.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": ">=8.7",
-    "gridelementsteam/gridelements": ">=8.4",
-    "mask/mask": "^3.3"
+    "typo3/cms-core": ">=10.4",
+    "gridelementsteam/gridelements": ">=9.3"
   },
   "autoload": {
     "psr-4": {
