@@ -1,9 +1,15 @@
 {
-    "name": "riconet/t3-project-customer",
+    "name": "riconet/t3-project-jungerkammerchorsiegen",
     "description": "t3-project-customer",
     "license": "GPL-3.0-or-later",
     "repositories": [
-        { "type": "composer", "url": "https://composer.typo3.org/" }
+        {
+            "type": "path",
+            "url": "extensions/*",
+            "options": {
+                "symlink": true
+            }
+        }
     ],
     "config": {
         "platform": {
@@ -39,6 +45,7 @@
         "typo3/cms-redirects": "^10.4",
         "typo3/cms-lowlevel": "^10.4",
         "typo3/cms-recycler": "^10.4",
+        "typo3/cms-dashboard": "^10.4",
         "helhum/typo3-console": "^6.0",
         "helhum/dotenv-connector": "^2.1",
         "gridelementsteam/gridelements":"^10.0",
@@ -46,7 +53,8 @@
         "t3/min": "^1.7",
         "lochmueller/staticfilecache": "^11.1",
         "jigal/t3adminer": "^9.3",
-        "plan2net/webp": "^3.0"
+        "plan2net/webp": "^3.0",
+        "failx/templates-jungerkammerchor": "@dev"
     },
     "require-dev": {
         "typo3/testing-framework": "^5.0",
@@ -63,11 +71,5 @@
             "vendor/bin/typo3cms install:fixfolderstructure",
             "vendor/bin/typo3cms install:generatepackagestates"
         ]
-    },
-    "autoload": {
-        "psr-4": {
-            "Failx\\FxTemplatesJungerkammerchor\\": "public/typo3conf/ext/fx_templates_jungerkammerchor/Classes/"
-        }
     }
-
 }
