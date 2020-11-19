@@ -13,7 +13,7 @@ host('prod')
 // Config
 set('bin_folder', './vendor/bin/');
 set('typo3_webroot', 'public');
-set('yarn_path', 'public/typo3conf/ext/fx_templates_jungerkammerchor/');
+set('yarn_path', 'extensions/fx_templates_jungerkammerchor/');
 
 add('shared_files', [
     '.env'
