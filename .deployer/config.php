@@ -72,14 +72,14 @@ task('typo3', function () {
     run('cd {{release_path}} && {{bin_folder}}typo3cms cache:flush');
 });
 
+task('yarn', function () {
+    run('cd {{yarn_path}} && yarn install --silent --non-interactive');
+})->local();
 
 // task('opcache', function () {
 //     run('cd {{release_path}} && {{bin_folder}}cachetool opcache:reset');
 // });
 
-task('yarn', function () {
-    run('./build/scripts/extensions-yarn.sh');
-})->local();
 
 task('deploy', [
     'deploy:unlock',
