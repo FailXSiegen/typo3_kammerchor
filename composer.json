@@ -3,6 +3,7 @@
     "description": "t3-project-customer",
     "license": "GPL-3.0-or-later",
     "repositories": [
+        { "type": "composer", "url": "https://composer.typo3.org/" },
         {
             "type": "path",
             "url": "extensions/*",
@@ -55,10 +56,6 @@
         "jigal/t3adminer": "^9.3",
         "plan2net/webp": "^3.0",
         "failx/templates-jungerkammerchor": "@dev"
-    },
-    "require-dev": {
-        "typo3/testing-framework": "^5.0",
-        "codeception/codeception": "^3.0"
     },
     "extra": {
         "typo3/cms": {
