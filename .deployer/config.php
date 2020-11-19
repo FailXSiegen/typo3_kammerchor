@@ -16,16 +16,7 @@ set('typo3_webroot', 'public');
 set('yarn_path', 'public/typo3conf/ext/fx_templates_jungerkammerchor/');
 
 add('shared_files', [
-    '.env',
-    '{{typo3_webroot}}/robots.txt'
-]);
-
-add('shared_dirs', [
-    'var'
-]);
-
-add('writable_dirs', [
-    'var'
+    '.env'
 ]);
 
 set('rsync_src', './');
@@ -60,7 +51,7 @@ set('rsync',[
 
 // Tasks
 task('build', function () {
-    run('composer -q install --no-dev');
+    run('composer -q install');
 })->local();
 
 task('typo3', function () {
@@ -69,7 +60,7 @@ task('typo3', function () {
     run('cd {{release_path}} && {{bin_folder}}typo3cms database:updateschema *.add,*.change');
     run('cd {{release_path}} && {{bin_folder}}typo3cms extension:setupactive');
     run('cd {{release_path}} && {{bin_folder}}typo3cms language:update');
-    run('cd {{release_path}} && {{bin_folder}}typo3cms cache:flush');
+    run('cd {{release_path}} && {{bin_folder}}typo3cms cache:flush --force');
 });
 
 task('yarn', function () {
@@ -79,7 +70,6 @@ task('yarn', function () {
 // task('opcache', function () {
 //     run('cd {{release_path}} && {{bin_folder}}cachetool opcache:reset');
 // });
-
 
 task('deploy', [
     'deploy:unlock',
