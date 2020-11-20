@@ -60,7 +60,7 @@ task('typo3', function () {
     run('cd {{release_path}} && {{bin_folder}}typo3cms database:updateschema *.add,*.change');
     run('cd {{release_path}} && {{bin_folder}}typo3cms extension:setupactive');
     run('cd {{release_path}} && {{bin_folder}}typo3cms language:update');
-    run('cd {{release_path}} && {{bin_folder}}typo3cms cache:flush --force');
+    run('cd {{release_path}} && {{bin_folder}}typo3cms cache:flush');
 });
 
 task('yarn', function () {
