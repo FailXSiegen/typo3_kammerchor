@@ -13,6 +13,9 @@
     "typo3/cms-core": ">=10.4",
     "gridelementsteam/gridelements": ">=9.3"
   },
+  "replace": {
+    "fx_templates_jungerkammerchor": "*"
+  },
   "autoload": {
     "psr-4": {
       "Failx\\FxTemplatesJungerkammerchor\\": "Classes/"
