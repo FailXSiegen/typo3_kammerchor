@@ -14,11 +14,11 @@
     ],
     "config": {
         "platform": {
-            "php": "7.2"
+            "php": "7.4"
         }
     },
     "require": {
-        "php": "^7.2",
+        "php": "^7.4",
         "typo3/cms-backend": "^10.4",
         "typo3/cms-core": "^10.4",
         "typo3/cms-extbase": "^10.4",
@@ -53,7 +53,6 @@
         "mask/mask": "^5.0",
         "t3/min": "^1.7",
         "lochmueller/staticfilecache": "^11.1",
-        "jigal/t3adminer": "^9.3",
         "plan2net/webp": "^3.0",
         "failx/templates-jungerkammerchor": "@dev"
     },
