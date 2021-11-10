@@ -14,11 +14,11 @@
     ],
     "config": {
         "platform": {
-            "php": "7.4"
+            "php": "7.2"
         }
     },
     "require": {
-        "php": "^7.4",
+        "php": "^7.2",
         "typo3/cms-backend": "^10.4",
         "typo3/cms-core": "^10.4",
         "typo3/cms-extbase": "^10.4",
