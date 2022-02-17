@@ -39,6 +39,12 @@ $GLOBALS['TYPO3_CONF_VARS'] = array_replace_recursive(
             'defaultMailFromName' => $_ENV['MAIL_FROMNAME'],
             'defaultMailReplyToAddress' => $_ENV['MAIL_REPLY'],
             'defaultMailReplyToName' => $_ENV['MAIL_REPLYNAME'],
+            'templateRootPaths' => [
+                250 => $_ENV['MAIL_TEMPLATES']
+            ],
+            'layoutRootPaths' => [
+                250 => $_ENV['MAIL_LAYOUTS']
+            ],
         ],
         'SYS' => [
             'sitename' => $_ENV['SITENAME'],

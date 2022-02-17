@@ -1,0 +1,6 @@
+<f:spaceless><f:render section="Title" optional="true" />
+<f:render section="Main" /></f:spaceless>
+https://doodle.com/poll/54ncgk3ha7ww27z3 Doodle Terminliste
+
+F&uuml;r weitere Infos melden Sie sich gerne bei info@junger-kammerchor-siegen.de und schauen Sie regem&auml;&szlig;ig auf unserer Website vorbei: {normalizedParams.siteUrl}
+    
