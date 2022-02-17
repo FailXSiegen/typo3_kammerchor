@@ -4,6 +4,8 @@ composer.lock
 .Build
 .php_cs.cache
 vendor/
+.vscode/
+.database/
 /public/typo3
 /public/fileadmin
 /public/typo3temp
