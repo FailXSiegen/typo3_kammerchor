@@ -9,7 +9,7 @@
                         <label class="control-label h5" for="{element.uniqueIdentifier}">{formvh:translateElementProperty(element: element, property: 'label')}<f:if condition="{element.required}"><f:render partial="Field/Required" /></f:if></label>
                     </div>
                 </f:if>
-                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 offset-sm-5 offset-md-0">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 {f:if(condition:'{element.properties.value} == 1', then:'offset-0 offset-sm-5')}">
                     <div class="{element.properties.containerClassAttribute} d-flex">
                         <f:format.raw>
                             {elementContent}
