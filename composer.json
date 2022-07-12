@@ -23,6 +23,9 @@
     "config": {
         "platform": {
             "php": "7.4"
+        },
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true
         }
     },
     "require": {
