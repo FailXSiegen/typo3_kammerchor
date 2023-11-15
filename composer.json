@@ -22,7 +22,7 @@
     ],
     "config": {
         "platform": {
-            "php": "7.4"
+            "php": "7.4.29"
         },
         "allow-plugins": {
             "typo3/class-alias-loader": true,
@@ -60,7 +60,7 @@
         "typo3/cms-lowlevel": "^10.4",
         "typo3/cms-recycler": "^10.4",
         "typo3/cms-dashboard": "^10.4",
-        "helhum/typo3-console": "^6.0",
+        "helhum/typo3-console": "^6.7",
         "helhum/dotenv-connector": "^2.1",
         "gridelementsteam/gridelements":"^10.0",
         "mask/mask": "^7.0",
@@ -70,16 +70,14 @@
         "jigal/t3adminer":"^9.5",
         "failx/templates-jungerkammerchor": "@dev"
     },
+    "require-dev": {
+		"deployer/deployer": "^6",
+		"deployer/recipes": "^6"
+    },
     "extra": {
         "typo3/cms": {
             "cms-package-dir": "{$vendor-dir}/typo3/cms",
             "web-dir": "public"
         }
-    },
-    "scripts": {
-        "post-autoload-dump": [
-            "vendor/bin/typo3cms install:fixfolderstructure",
-            "vendor/bin/typo3cms install:generatepackagestates"
-        ]
     }
 }
