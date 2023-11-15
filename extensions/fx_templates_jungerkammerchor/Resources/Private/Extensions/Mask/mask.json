@@ -1,670 +1,545 @@
 {
-    "sys_file_reference": {
-        "sql": {
-            "tx_mask_eventimage": {
-                "sys_file_reference": {
-                    "tx_mask_eventimage": "int(11) unsigned DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_headerpic": {
-                "sys_file_reference": {
-                    "tx_mask_headerpic": "int(11) unsigned DEFAULT '0' NOT NULL"
-                }
-            }
-        }
-    },
-    "tt_content": {
-        "elements": {
-            "counter": {
-                "color": "#000000",
-                "columns": [
-                    "header",
-                    "tx_mask_countto"
-                ],
-                "description": "",
-                "icon": "",
-                "key": "counter",
-                "label": "Counter",
-                "labels": [
-                    "\u00dcberschrift",
-                    "Z\u00e4hler"
-                ],
-                "shortLabel": ""
-            },
-            "headerslider": {
-                "color": "#000000",
-                "columns": [
-                    "header",
-                    "tx_mask_headerslider"
-                ],
-                "description": "",
-                "icon": "",
-                "key": "headerslider",
-                "label": "Headerslider",
-                "labels": [
-                    "\u00dcberschrift",
-                    "Headerslider"
-                ],
-                "shortLabel": ""
-            },
-            "performanceinfos": {
-                "color": "#1e2cff",
-                "columns": [
-                    "header",
-                    "tx_mask_eventteaser",
-                    "tx_mask_location",
-                    "tx_mask_street",
-                    "tx_mask_adressnumber",
-                    "tx_mask_zip",
-                    "tx_mask_city",
-                    "tx_mask_region",
-                    "tx_mask_country",
-                    "tx_mask_gmapsembedd",
-                    "tx_mask_gmapslat",
-                    "tx_mask_gmapslot",
-                    "tx_mask_datumundeinlass",
-                    "tx_mask_enddatetime",
-                    "tx_mask_price",
-                    "tx_mask_pricereduced",
-                    "tx_mask_priceinformation",
-                    "tx_mask_contactphone",
-                    "tx_mask_contactmail",
-                    "tx_mask_eventimage"
-                ],
-                "description": "Zusammenfassung der Informationen zum Auftritt",
-                "icon": "fa-info-circle",
-                "key": "performanceinfos",
-                "label": "Auftritt-Informationen",
-                "labels": [
-                    "Titel",
-                    "Beschreibung",
-                    "Ortzbezeichnung",
-                    "Stra\u00dfe",
-                    "Hausnummer",
-                    "PLZ",
-                    "Stadt",
-                    "Bundesland",
-                    "Land",
-                    "Google Maps Embed Code URL",
-                    "Latitude",
-                    "Longitude",
-                    "Datum und Einlass",
-                    "Enddatum",
-                    "Preis",
-                    "Preis reduziert",
-                    "Zus\u00e4tzliche Angaben zum Preis",
-                    "Telefon",
-                    "E-Mail Kontakt",
-                    "Bild"
-                ],
-                "options": {
-                    "16": "rte"
-                },
-                "shortLabel": ""
-            }
-        },
-        "sql": {
-            "tx_mask_adressnumber": {
-                "tt_content": {
-                    "tx_mask_adressnumber": "tinytext"
-                }
-            },
-            "tx_mask_city": {
-                "tt_content": {
-                    "tx_mask_city": "tinytext"
-                }
-            },
-            "tx_mask_contactmail": {
-                "tt_content": {
-                    "tx_mask_contactmail": "tinytext"
-                }
-            },
-            "tx_mask_contactphone": {
-                "tt_content": {
-                    "tx_mask_contactphone": "tinytext"
-                }
-            },
-            "tx_mask_country": {
-                "tt_content": {
-                    "tx_mask_country": "tinytext"
-                }
-            },
-            "tx_mask_countto": {
-                "tt_content": {
-                    "tx_mask_countto": "tinytext"
-                }
-            },
-            "tx_mask_datumundeinlass": {
-                "tt_content": {
-                    "tx_mask_datumundeinlass": "datetime"
-                }
-            },
-            "tx_mask_enddatetime": {
-                "tt_content": {
-                    "tx_mask_enddatetime": "datetime"
-                }
-            },
-            "tx_mask_eventimage": {
-                "tt_content": {
-                    "tx_mask_eventimage": "int(11) unsigned DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_eventteaser": {
-                "tt_content": {
-                    "tx_mask_eventteaser": "mediumtext"
-                }
-            },
-            "tx_mask_gmapsembedd": {
-                "tt_content": {
-                    "tx_mask_gmapsembedd": "tinytext"
-                }
-            },
-            "tx_mask_gmapslat": {
-                "tt_content": {
-                    "tx_mask_gmapslat": "tinytext"
-                }
-            },
-            "tx_mask_gmapslot": {
-                "tt_content": {
-                    "tx_mask_gmapslot": "tinytext"
-                }
-            },
-            "tx_mask_headerslider": {
-                "tt_content": {
-                    "tx_mask_headerslider": "int(11) unsigned DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_location": {
-                "tt_content": {
-                    "tx_mask_location": "tinytext"
-                }
-            },
-            "tx_mask_price": {
-                "tt_content": {
-                    "tx_mask_price": "tinytext"
-                }
-            },
-            "tx_mask_priceinformation": {
-                "tt_content": {
-                    "tx_mask_priceinformation": "mediumtext"
-                }
-            },
-            "tx_mask_pricereduced": {
-                "tt_content": {
-                    "tx_mask_pricereduced": "tinytext"
-                }
-            },
-            "tx_mask_region": {
-                "tt_content": {
-                    "tx_mask_region": "tinytext"
-                }
-            },
-            "tx_mask_street": {
-                "tt_content": {
-                    "tx_mask_street": "tinytext"
-                }
-            },
-            "tx_mask_zip": {
-                "tt_content": {
-                    "tx_mask_zip": "tinytext"
-                }
-            }
-        },
-        "tca": {
-            "tx_mask_adressnumber": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "adressnumber",
-                "l10n_mode": ""
-            },
-            "tx_mask_city": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "city",
-                "l10n_mode": ""
-            },
-            "tx_mask_contactmail": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "contactmail",
-                "l10n_mode": ""
-            },
-            "tx_mask_contactphone": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "contactphone",
-                "l10n_mode": ""
-            },
-            "tx_mask_country": {
-                "config": {
-                    "default": "DE",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "country",
-                "l10n_mode": ""
-            },
-            "tx_mask_countto": {
-                "config": {
-                    "default": "",
-                    "eval": "required",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "countto",
-                "l10n_mode": ""
-            },
-            "tx_mask_datumundeinlass": {
-                "config": {
-                    "dbType": "datetime",
-                    "default": "",
-                    "eval": "datetime",
-                    "placeholder": "",
-                    "range": {
-                        "lower": "",
-                        "upper": ""
-                    },
-                    "renderType": "inputDateTime",
-                    "size": "20",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "datumundeinlass",
-                "l10n_mode": ""
-            },
-            "tx_mask_enddatetime": {
-                "config": {
-                    "dbType": "datetime",
-                    "default": "",
-                    "eval": "datetime",
-                    "placeholder": "",
-                    "range": {
-                        "lower": "",
-                        "upper": ""
-                    },
-                    "renderType": "inputDateTime",
-                    "size": "20",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "enddatetime",
-                "l10n_mode": ""
-            },
-            "tx_mask_eventimage": {
-                "config": {
-                    "filter": [
-                        {
-                            "parameters": {
-                                "allowedFileExtensions": ""
-                            }
-                        }
-                    ],
-                    "maxitems": "",
-                    "minitems": ""
-                },
-                "exclude": "1",
-                "key": "eventimage",
-                "l10n_mode": "",
-                "options": "file"
-            },
-            "tx_mask_eventteaser": {
-                "config": {
-                    "cols": "",
-                    "default": "",
-                    "eval": "",
-                    "format": "",
-                    "max": "",
-                    "placeholder": "",
-                    "rows": "",
-                    "type": "text"
-                },
-                "exclude": "1",
-                "key": "eventteaser",
-                "l10n_mode": ""
-            },
-            "tx_mask_gmapsembedd": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "gmapsembedd",
-                "l10n_mode": ""
-            },
-            "tx_mask_gmapslat": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "gmapslat",
-                "l10n_mode": ""
-            },
-            "tx_mask_gmapslot": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "gmapslot",
-                "l10n_mode": ""
-            },
-            "tx_mask_headerslider": {
-                "config": {
-                    "appearance": {
-                        "enabledControls": {
-                            "dragdrop": "1"
-                        },
-                        "levelLinksPosition": "top",
-                        "newRecordLinkTitle": ""
-                    },
-                    "foreign_field": "parentid",
-                    "foreign_sortby": "sorting",
-                    "foreign_table": "--inlinetable--",
-                    "foreign_table_field": "parenttable",
-                    "maxitems": "",
-                    "minitems": "",
-                    "type": "inline"
-                },
-                "exclude": "1",
-                "inlineIcon": "",
-                "inlineLabel": "",
-                "key": "headerslider",
-                "l10n_mode": ""
-            },
-            "tx_mask_location": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "location",
-                "l10n_mode": ""
-            },
-            "tx_mask_price": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "price",
-                "l10n_mode": ""
-            },
-            "tx_mask_priceinformation": {
-                "config": {
-                    "cols": "",
-                    "default": "",
-                    "enableRichtext": "1",
-                    "eval": "",
-                    "max": "",
-                    "placeholder": "",
-                    "richtextConfiguration": "default",
-                    "rows": "",
-                    "type": "text"
-                },
-                "exclude": "1",
-                "key": "priceinformation",
-                "l10n_mode": ""
-            },
-            "tx_mask_pricereduced": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "pricereduced",
-                "l10n_mode": ""
-            },
-            "tx_mask_region": {
-                "config": {
-                    "default": "Nordrhein-Westfalen",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "region",
-                "l10n_mode": ""
-            },
-            "tx_mask_street": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "street",
-                "l10n_mode": ""
-            },
-            "tx_mask_zip": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
-                },
-                "exclude": "1",
-                "key": "zip",
-                "l10n_mode": ""
-            }
-        }
-    },
-    "tx_mask_headerslider": {
-        "sql": {
-            "tx_mask_headerlink": {
-                "tx_mask_headerslider": {
-                    "tx_mask_headerlink": "tinytext"
-                }
-            },
-            "tx_mask_headerpic": {
-                "tx_mask_headerslider": {
-                    "tx_mask_headerpic": "int(11) unsigned DEFAULT '0' NOT NULL"
-                }
-            },
-            "tx_mask_headerteaser": {
-                "tx_mask_headerslider": {
-                    "tx_mask_headerteaser": "mediumtext"
-                }
-            },
-            "tx_mask_headertitle": {
-                "tx_mask_headerslider": {
-                    "tx_mask_headertitle": "mediumtext"
-                }
-            },
-            "tx_mask_linkbutton": {
-                "tx_mask_headerslider": {
-                    "tx_mask_linkbutton": "tinytext"
-                }
-            }
-        },
-        "tca": {
-            "tx_mask_headerlink": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "fieldControl": {
-                        "linkPopup": {
-                            "options": {
-                                "blindLinkOptions": "",
-                                "title": "Link",
-                                "windowOpenParameters": "height=300,width=500,status=0,menubar=0,scrollbars=1"
-                            }
-                        }
-                    },
-                    "placeholder": "",
-                    "renderType": "inputLink",
-                    "size": "",
-                    "softref": "typolink",
-                    "type": "input",
-                    "wizards": {
-                        "link": {
-                            "icon": "actions-wizard-link",
-                            "params": {
-                                "allowedExtensions": ""
-                            }
-                        }
+    "version": "7.2.0",
+    "tables": {
+        "sys_file_reference": {
+            "sql": {
+                "tx_mask_eventimage": {
+                    "sys_file_reference": {
+                        "tx_mask_eventimage": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 },
-                "exclude": "1",
-                "inlineParent": "tx_mask_headerslider",
-                "key": "headerlink",
-                "l10n_mode": "",
-                "label": "Link f\u00fcr Button",
-                "order": 5
-            },
-            "tx_mask_headerpic": {
-                "config": {
-                    "filter": [
-                        {
-                            "parameters": {
-                                "allowedFileExtensions": ""
-                            }
-                        }
+                "tx_mask_headerpic": {
+                    "sys_file_reference": {
+                        "tx_mask_headerpic": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            }
+        },
+        "tt_content": {
+            "elements": {
+                "counter": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "tx_mask_countto"
                     ],
-                    "maxitems": "1",
-                    "minitems": "1"
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "counter",
+                    "label": "Counter",
+                    "labels": [
+                        "\u00dcberschrift",
+                        "Z\u00e4hler"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
                 },
-                "exclude": "1",
-                "inlineParent": "tx_mask_headerslider",
-                "key": "headerpic",
-                "l10n_mode": "",
-                "label": "Bild",
-                "options": "file",
-                "order": 3
+                "headerslider": {
+                    "color": "#000000",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "tx_mask_headerslider"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "headerslider",
+                    "label": "Headerslider",
+                    "labels": [
+                        "\u00dcberschrift",
+                        "Headerslider"
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "performanceinfos": {
+                    "color": "#1e2cff",
+                    "colorOverlay": "",
+                    "columns": [
+                        "header",
+                        "tx_mask_eventteaser",
+                        "tx_mask_location",
+                        "tx_mask_street",
+                        "tx_mask_adressnumber",
+                        "tx_mask_zip",
+                        "tx_mask_city",
+                        "tx_mask_region",
+                        "tx_mask_country",
+                        "tx_mask_gmapsembedd",
+                        "tx_mask_gmapslat",
+                        "tx_mask_gmapslot",
+                        "tx_mask_datumundeinlass",
+                        "tx_mask_enddatetime",
+                        "tx_mask_price",
+                        "tx_mask_pricereduced",
+                        "tx_mask_priceinformation",
+                        "tx_mask_contactphone",
+                        "tx_mask_contactmail",
+                        "tx_mask_eventimage"
+                    ],
+                    "description": "Zusammenfassung der Informationen zum Auftritt",
+                    "descriptions": [
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""
+                    ],
+                    "icon": "fa-info-circle",
+                    "iconOverlay": "",
+                    "key": "performanceinfos",
+                    "label": "Auftritt-Informationen",
+                    "labels": [
+                        "Titel",
+                        "Beschreibung",
+                        "Ortzbezeichnung",
+                        "Stra\u00dfe",
+                        "Hausnummer",
+                        "PLZ",
+                        "Stadt",
+                        "Bundesland",
+                        "Land",
+                        "Google Maps Embed Code URL",
+                        "Latitude",
+                        "Longitude",
+                        "Datum und Einlass",
+                        "Enddatum",
+                        "Preis",
+                        "Preis reduziert",
+                        "Zus\u00e4tzliche Angaben zum Preis",
+                        "Telefon",
+                        "E-Mail Kontakt",
+                        "Bild"
+                    ],
+                    "options": {
+                        "16": "rte"
+                    },
+                    "shortLabel": "",
+                    "sorting": 0
+                }
             },
-            "tx_mask_headerteaser": {
-                "config": {
-                    "cols": "",
-                    "default": "",
-                    "eval": "",
-                    "format": "",
-                    "max": "",
-                    "placeholder": "",
-                    "rows": "",
+            "sql": {
+                "tx_mask_adressnumber": {
+                    "tt_content": {
+                        "tx_mask_adressnumber": "tinytext"
+                    }
+                },
+                "tx_mask_city": {
+                    "tt_content": {
+                        "tx_mask_city": "tinytext"
+                    }
+                },
+                "tx_mask_contactmail": {
+                    "tt_content": {
+                        "tx_mask_contactmail": "tinytext"
+                    }
+                },
+                "tx_mask_contactphone": {
+                    "tt_content": {
+                        "tx_mask_contactphone": "tinytext"
+                    }
+                },
+                "tx_mask_country": {
+                    "tt_content": {
+                        "tx_mask_country": "tinytext"
+                    }
+                },
+                "tx_mask_countto": {
+                    "tt_content": {
+                        "tx_mask_countto": "tinytext"
+                    }
+                },
+                "tx_mask_datumundeinlass": {
+                    "tt_content": {
+                        "tx_mask_datumundeinlass": "datetime"
+                    }
+                },
+                "tx_mask_enddatetime": {
+                    "tt_content": {
+                        "tx_mask_enddatetime": "datetime"
+                    }
+                },
+                "tx_mask_eventimage": {
+                    "tt_content": {
+                        "tx_mask_eventimage": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_eventteaser": {
+                    "tt_content": {
+                        "tx_mask_eventteaser": "mediumtext"
+                    }
+                },
+                "tx_mask_gmapsembedd": {
+                    "tt_content": {
+                        "tx_mask_gmapsembedd": "tinytext"
+                    }
+                },
+                "tx_mask_gmapslat": {
+                    "tt_content": {
+                        "tx_mask_gmapslat": "tinytext"
+                    }
+                },
+                "tx_mask_gmapslot": {
+                    "tt_content": {
+                        "tx_mask_gmapslot": "tinytext"
+                    }
+                },
+                "tx_mask_headerslider": {
+                    "tt_content": {
+                        "tx_mask_headerslider": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_location": {
+                    "tt_content": {
+                        "tx_mask_location": "tinytext"
+                    }
+                },
+                "tx_mask_price": {
+                    "tt_content": {
+                        "tx_mask_price": "tinytext"
+                    }
+                },
+                "tx_mask_priceinformation": {
+                    "tt_content": {
+                        "tx_mask_priceinformation": "mediumtext"
+                    }
+                },
+                "tx_mask_pricereduced": {
+                    "tt_content": {
+                        "tx_mask_pricereduced": "tinytext"
+                    }
+                },
+                "tx_mask_region": {
+                    "tt_content": {
+                        "tx_mask_region": "tinytext"
+                    }
+                },
+                "tx_mask_street": {
+                    "tt_content": {
+                        "tx_mask_street": "tinytext"
+                    }
+                },
+                "tx_mask_zip": {
+                    "tt_content": {
+                        "tx_mask_zip": "tinytext"
+                    }
+                }
+            },
+            "tca": {
+                "header": {
+                    "coreField": 1,
+                    "fullKey": "header",
+                    "key": "header"
+                },
+                "tx_mask_adressnumber": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_adressnumber",
+                    "key": "adressnumber",
+                    "type": "string"
+                },
+                "tx_mask_city": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_city",
+                    "key": "city",
+                    "type": "string"
+                },
+                "tx_mask_contactmail": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_contactmail",
+                    "key": "contactmail",
+                    "type": "string"
+                },
+                "tx_mask_contactphone": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_contactphone",
+                    "key": "contactphone",
+                    "type": "string"
+                },
+                "tx_mask_country": {
+                    "config": {
+                        "default": "DE",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_country",
+                    "key": "country",
+                    "type": "string"
+                },
+                "tx_mask_countto": {
+                    "config": {
+                        "eval": "required",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_countto",
+                    "key": "countto",
+                    "type": "string"
+                },
+                "tx_mask_datumundeinlass": {
+                    "config": {
+                        "dbType": "datetime",
+                        "eval": "datetime",
+                        "renderType": "inputDateTime",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_datumundeinlass",
+                    "key": "datumundeinlass",
+                    "type": "datetime"
+                },
+                "tx_mask_enddatetime": {
+                    "config": {
+                        "dbType": "datetime",
+                        "eval": "datetime",
+                        "renderType": "inputDateTime",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_enddatetime",
+                    "key": "enddatetime",
+                    "type": "datetime"
+                },
+                "tx_mask_eventimage": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_eventimage",
+                    "imageoverlayPalette": 1,
+                    "key": "eventimage",
+                    "type": "file"
+                },
+                "tx_mask_eventteaser": {
+                    "config": {
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_eventteaser",
+                    "key": "eventteaser",
                     "type": "text"
                 },
-                "exclude": "1",
-                "inlineParent": "tx_mask_headerslider",
-                "key": "headerteaser",
-                "l10n_mode": "",
-                "label": "Teaser",
-                "order": 4
+                "tx_mask_gmapsembedd": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_gmapsembedd",
+                    "key": "gmapsembedd",
+                    "type": "string"
+                },
+                "tx_mask_gmapslat": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_gmapslat",
+                    "key": "gmapslat",
+                    "type": "string"
+                },
+                "tx_mask_gmapslot": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_gmapslot",
+                    "key": "gmapslot",
+                    "type": "string"
+                },
+                "tx_mask_headerslider": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "dragdrop": "1"
+                            },
+                            "levelLinksPosition": "top"
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_headerslider",
+                    "key": "headerslider",
+                    "type": "inline"
+                },
+                "tx_mask_location": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_location",
+                    "key": "location",
+                    "type": "string"
+                },
+                "tx_mask_price": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_price",
+                    "key": "price",
+                    "type": "string"
+                },
+                "tx_mask_priceinformation": {
+                    "config": {
+                        "enableRichtext": "1",
+                        "richtextConfiguration": "default",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_priceinformation",
+                    "key": "priceinformation",
+                    "type": "richtext"
+                },
+                "tx_mask_pricereduced": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_pricereduced",
+                    "key": "pricereduced",
+                    "type": "string"
+                },
+                "tx_mask_region": {
+                    "config": {
+                        "default": "Nordrhein-Westfalen",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_region",
+                    "key": "region",
+                    "type": "string"
+                },
+                "tx_mask_street": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_street",
+                    "key": "street",
+                    "type": "string"
+                },
+                "tx_mask_zip": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_zip",
+                    "key": "zip",
+                    "type": "string"
+                }
+            }
+        },
+        "tx_mask_headerslider": {
+            "sql": {
+                "tx_mask_headerlink": {
+                    "tx_mask_headerslider": {
+                        "tx_mask_headerlink": "tinytext"
+                    }
+                },
+                "tx_mask_headerpic": {
+                    "tx_mask_headerslider": {
+                        "tx_mask_headerpic": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_headerteaser": {
+                    "tx_mask_headerslider": {
+                        "tx_mask_headerteaser": "mediumtext"
+                    }
+                },
+                "tx_mask_headertitle": {
+                    "tx_mask_headerslider": {
+                        "tx_mask_headertitle": "mediumtext"
+                    }
+                },
+                "tx_mask_linkbutton": {
+                    "tx_mask_headerslider": {
+                        "tx_mask_linkbutton": "tinytext"
+                    }
+                }
             },
-            "tx_mask_headertitle": {
-                "config": {
-                    "cols": "",
-                    "default": "",
-                    "eval": "required",
-                    "format": "",
-                    "max": "",
-                    "placeholder": "",
-                    "rows": "",
+            "tca": {
+                "tx_mask_headerlink": {
+                    "config": {
+                        "renderType": "inputLink",
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_headerlink",
+                    "inlineParent": "tx_mask_headerslider",
+                    "key": "headerlink",
+                    "label": "Link f\u00fcr Button",
+                    "order": 5,
+                    "type": "link"
+                },
+                "tx_mask_headerpic": {
+                    "config": {
+                        "foreign_table": "sys_file_reference",
+                        "maxitems": "1",
+                        "minitems": "1",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_headerpic",
+                    "imageoverlayPalette": 1,
+                    "inlineParent": "tx_mask_headerslider",
+                    "key": "headerpic",
+                    "label": "Bild",
+                    "order": 3,
+                    "type": "file"
+                },
+                "tx_mask_headerteaser": {
+                    "config": {
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_headerteaser",
+                    "inlineParent": "tx_mask_headerslider",
+                    "key": "headerteaser",
+                    "label": "Teaser",
+                    "order": 4,
                     "type": "text"
                 },
-                "exclude": "1",
-                "inlineParent": "tx_mask_headerslider",
-                "key": "headertitle",
-                "l10n_mode": "",
-                "label": "\u00dcberschrift",
-                "order": 2
-            },
-            "tx_mask_linkbutton": {
-                "config": {
-                    "default": "",
-                    "eval": "",
-                    "is_in": "",
-                    "max": "",
-                    "placeholder": "",
-                    "size": "",
-                    "type": "input"
+                "tx_mask_headertitle": {
+                    "config": {
+                        "eval": "required",
+                        "type": "text"
+                    },
+                    "fullKey": "tx_mask_headertitle",
+                    "inlineParent": "tx_mask_headerslider",
+                    "key": "headertitle",
+                    "label": "\u00dcberschrift",
+                    "order": 2,
+                    "type": "text"
                 },
-                "exclude": "1",
-                "inlineParent": "tx_mask_headerslider",
-                "key": "linkbutton",
-                "l10n_mode": "",
-                "label": "Button Text",
-                "order": 6
+                "tx_mask_linkbutton": {
+                    "config": {
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_linkbutton",
+                    "inlineParent": "tx_mask_headerslider",
+                    "key": "linkbutton",
+                    "label": "Button Text",
+                    "order": 6,
+                    "type": "string"
+                }
             }
         }
     }
