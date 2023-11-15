@@ -36,8 +36,8 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'info@failx.de',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.0-10.4.99',
-            'gridelements' => '8.4.1-10.9.99',
+            'typo3' => '9.5.0-11.5.99',
+            'gridelements' => '8.4.1-11.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],
