@@ -7,6 +7,7 @@ require 'vendor/deployer/recipes/recipe/rsync.php';
 // Hosts
 host('prod')
     ->hostname('junger-kammerchor-siegen.de')
+    ->set('php_path', '/usr/bin/php8.1')
     ->user('c1_ssh_kammer')
     ->set('deploy_path', '/var/www/clients/client1/web749/web/deployment');
 
@@ -51,14 +52,14 @@ set('rsync',[
 
 // Tasks
 task('build', function () {
-    run('composer install');
+    run('composer update');
 })->local();
 
 task('typo3', function () {
-    run('cd {{release_path}} && {{bin_folder}}typo3cms install:fixfolderstructure');
-    run('cd {{release_path}} && {{bin_folder}}typo3cms database:updateschema *.add,*.change');
-    run('cd {{release_path}} && {{bin_folder}}typo3cms language:update');
-    run('cd {{release_path}} && {{bin_folder}}typo3cms cache:flush');
+    run('cd {{release_path}} && {{php_path}} {{bin_folder}}typo3cms install:fixfolderstructure');
+    run('cd {{release_path}} && {{php_path}} {{bin_folder}}typo3cms database:updateschema *.add,*.change');
+    run('cd {{release_path}} && {{php_path}} {{bin_folder}}typo3cms language:update');
+    run('cd {{release_path}} && {{php_path}} {{bin_folder}}typo3cms cache:flush');
 });
 
 // task('yarn', function () {

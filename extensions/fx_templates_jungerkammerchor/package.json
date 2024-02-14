@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "@fancyapps/fancybox": "^3.5.7",
-    "bootstrap": "^4.3",
+    "@fancyapps/fancybox": "^3",
+    "bootstrap": "^4",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3",
-    "owl.carousel": "^2.3.4"
+    "jquery": "^3",
+    "owl.carousel": "^2"
   }
 }
